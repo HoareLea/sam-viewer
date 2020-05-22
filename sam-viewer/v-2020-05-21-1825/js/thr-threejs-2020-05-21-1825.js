@@ -31,8 +31,8 @@ THR.init = function () {
 	renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 	controls = new THREE.OrbitControls( camera, renderer.domElement );
-	controls.minDistance = 40;
-	controls.maxDistance = 500;
+	controls.minDistance = 1;
+	controls.maxDistance = 100;
 	controls.autoRotate = true;
 	controls.enableDamping = true;
 	controls.dampingFactor = 0.08;
