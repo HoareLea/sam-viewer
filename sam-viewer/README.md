@@ -18,9 +18,6 @@ _<small>SAM Viewer</small>_
 
 ## Concept
 
-* https://bhom.xyz/
-* https://github.com/BHoM
-
 
 ## To Do / Wish List
 
