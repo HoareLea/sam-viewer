@@ -1,25 +1,23 @@
+<span style=display:none; >[You are now in a GitHub source code view - click this link to view Read Me file as a web page]( https://hoarelea.github.io/sam-viewer/#sam-viewer/README.md "View file as a web page." ) </span>
 
-<span style=display:none; >[You are now in a GitHub source code view - click this link to view Read Me file as a web page]( https://www.ladybug.tools/spider/#sandbox/sam-viewer/README.md "View file as a web page." ) </span>
-
-<div><input type=button class = "btn btn-secondary btn-sm" onclick=window.location.href="https://github.com/ladybug.tools/spider/blob/master/sandbox/sam-viewer/README.md"
+<div><input type=button class = "btn btn-secondary btn-sm" onclick=window.location.href="https://github.com/HoareLea/sam-viewer/tree/master/sam-viewer"
 value="You are now in a GitHub web page view - Click this button to view this read me file as source code" ></div>
 
 <br>
 
-# [SAM Viewer Read Me]( #sandbox/sam-viewer/README.md )
+# [SAM Viewer Read Me]( #sam-viewer/README.md )
 
 
-<iframe src=https://www.ladybug.tools/spider/sandbox/sam-viewer/index.html width=100% height=500px >Iframes are not viewable in GitHub source code views</iframe>
+<iframe src=https://hoarelea.github.io/sam-viewer/sam-viewer/index.html width=100% height=500px >Iframes are not viewable in GitHub source code views</iframe>
 _<small>SAM Viewer</small>_
 
-## Full Screen: [SAM Viewer]( https://www.ladybug.tools/spider/sandbox/sam-viewer/index.html )
+## Full Screen: [SAM Viewer]( https://hoarelea.github.io/sam-viewer/sam-viewer/ )
 
 
 
 ## Concept
 
-* https://bhom.xyz/
-* https://github.com/BHoM
+
 
 
 ## To Do / Wish List
@@ -40,6 +38,11 @@ _<small>SAM Viewer</small>_
 
 
 ## Change Log
+
+### 2020-05-22 ~ Theo
+
+* Fork to HoareLea
+
 
 ### 2020-05-20 ~ Theo
 
