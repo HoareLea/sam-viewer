@@ -1,2 +1,3 @@
-# SAM_Viewer
-Web base SAM JSON viewer
+# Online Sustainable Analytical Model (SAM) JSON file interactive 3D viewer
+
+* https://github.com/HoareLea/SAM
