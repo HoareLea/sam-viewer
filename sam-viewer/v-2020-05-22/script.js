@@ -209,28 +209,34 @@ function setData( index ) {
 
 	pO = item.PlanarBoundary3D.Plane.Origin;
 	pN = item.PlanarBoundary3D.Plane.Normal;
+	pX = item.PlanarBoundary3D.Plane.AxisX;
 
 	edges = [];
 
 	for ( let edge of item.PlanarBoundary3D.Edge2DLoop.BoundaryEdge2Ds ) {
 
+		
 		const cO = edge.Curve2D.Origin;
 		//console.log( "eO", cO.X, cO.Y );
 
 		const cV = edge.Curve2D.Vector;
 		//console.log( "eV", cV.X, cV.Y );
 
-		edges.push( `eO ${ cO.X} ${ cO.Y }<br>eV ${ cV.X} ${ cV.Y }<br><br>` );
+		edges.push( `
+		eO ${ cO.X.toLocaleString() }, ${ cO.Y.toLocaleString() }<br>
+		eV ${ cV.X.toLocaleString() }, ${ cV.Y.toLocaleString() }<br><br>` );
 
 	 }
 
 	htm =
 
 	`
-	Origin:<br>${ pO.X} ${ pO.Y} ${ pO.Z}<br><br>
-	Normal:<br>${ pN.X} ${ pN.Y} ${ pN.Z}<br><br>
+	Origin:<br>${ pO.X.toLocaleString() }, ${ pO.Y.toLocaleString() }, ${ pO.Z.toLocaleString() }<br><br>
+	Normal:<br>${ pN.X}, ${ pN.Y}, ${ pN.Z}<br><br>
+	X-axis:<br>${ pX.X}, ${ pX.Y}, ${ pX.Z}<br><br>
 	Edges:<br>${ edges.join( "")}
 	`;
+
 
 	divLog.innerHTML = htm;
 
@@ -246,14 +252,13 @@ RAY.getHtm = function ( intersected ) {
 
 	//let htm = JSON.stringify( intersected.object.userData.json, null, "" );
 	//console.log( "json", json );
+	//htm = htm ? htm.replace( /,/g, ",<br>") : "&nbsp;";
 
 	const apps = json.Apertures && json.Apertures.length ? json.Apertures.length : 0;
 	const htm = `Name: ${ json.Name }<br>
 	Type: ${ json.PanelType }<br>
 	Apertures: ${ apps }`;
     
-	//htm = htm ? htm.replace( /,/g, ",<br>") : "&nbsp;";
-	
 	setData( intersected.object.userData.index )
 
 	return htm;

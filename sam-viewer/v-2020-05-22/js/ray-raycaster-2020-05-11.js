@@ -50,7 +50,7 @@ RAY.onMouseMove = function ( event ) {
 
 			divPopUp.hidden = false;
 			divPopUp.style.maxHeight = "50ch";
-			divPopUp.style.left = event.clientX + "px";
+			divPopUp.style.left = ( event.clientX + 30 ) + "px";
 			divPopUp.style.top = event.clientY + "px";
 			divPopUp.innerHTML = RAY.getHtm( intersected );
 

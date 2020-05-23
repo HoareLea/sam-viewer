@@ -18,6 +18,8 @@ See also
 
 * 2020-05-21 ~ Theo ~ Add Apertures
 * 2020-05-21 ~ Theo ~ Add colors to the panels
+* 2020-05-23 ~ Theo ~ Add open file using file dialog box
+* 2020-05-23 ~ Theo ~ Add tree view menu
 
 
 ## Issues
