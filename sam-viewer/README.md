@@ -39,10 +39,27 @@ _<small>SAM Viewer</small>_
 
 ## Change Log
 
+### 2020-05-23 ~ Theo
+
+Updates include
+
+* Reads vertices form JSON and creates geometry
+* Rotates geometry 90 degrees
+* Sets geometry 'up' direction to x-axis
+* Sets geometry 'lookAt' to origin vector plus normal vector
+* Casting shadows
+* Selecting panels by name
+* 'Kawaii'-like user interface - a beginning
+    * Rounded corners
+    * Nice font
+    * Cuter icons
+    * Box shadows
+    * Yada yada
+* Simplified pop-up text
+
 ### 2020-05-22 ~ Theo
 
 * Fork to HoareLea
-
 
 ### 2020-05-20 ~ Theo
 
