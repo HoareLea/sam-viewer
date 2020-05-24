@@ -37,12 +37,12 @@ FRJ.getMenu = function () {
 	</p>
 
 	<div id=FRJdivOnLoad ></div>
-
+<!--
 	<div>
 	Raw JSON
 	<textarea id=FRJtxtRawJson style=height:100px;overflow:auto;width:100%; ></textarea>
 	</div>
-
+-->
 
 	<p id=FRTpStats ></p>
 
@@ -88,7 +88,8 @@ FRJ.onLoad = function () {
 	//FRTtxtArea.innerHTML = FRJ.result;
 	const files = FRJ.files;
 
-	onLoadSam( FRJ.json ) 
+	onLoadSam( FRJ.json );
+
 	//FRJtxtRawJson.value = FRJ.result;
 
 
