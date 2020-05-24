@@ -61,8 +61,8 @@ See also
 
 If you like this effort
 
-    * Please give this repository a star
-    * sign up to receive notices of issues
+* Please give this repository a star
+* sign up to receive notices of issues
 
 
 ## Change Log

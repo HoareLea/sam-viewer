@@ -49,10 +49,10 @@ function init() {
 
 	divDescription.innerHTML = description;
 
-	aGlitch.href = "https://glitch.com/~2020-05-08-globe-template";
+	aGlitch.href = "https://glitch.com/~sam-viewer";
 
 	aGithub.href = 
-	"https://github.com/ladybug-tools/spider-covid-19-viz-3d/tree/master/cookbook/globe-template/";
+	"https://github.com/HoareLea/sam-viewer/";
 	
 	aTitle.innerHTML += ` ${ version }`;
 
