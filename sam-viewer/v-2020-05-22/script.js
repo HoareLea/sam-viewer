@@ -13,8 +13,6 @@ divDescription.innerHTML = document.head.querySelector( "[ name=description ]" )
 let json;
 let group;
 
-const v2 = ( x, y ) => new THREE.Vector2( x, y );
-
 
 
 function init() {
@@ -131,8 +129,6 @@ function getJsonLine( index ) {
 
 	}
 	//console.log( "vertices", vertices );
-
-	//verticesFix = [ vertices[ 0 ], vertices[ 1 ], vertices[ 1 ], vertices[ 3 ] ];
 	
 	let shape = getShape( vertices );
 	shape.position.copy( origin );
@@ -185,11 +181,11 @@ function getShape( vertices ) {
 
 function showPanel() {
 
-	shape = getJsonLine( selPanel.selectedIndex );
-
 	scene.remove( group );
-
+	
 	group = new THREE.Group();
+	
+	const shape = getJsonLine( selPanel.selectedIndex );
 
 	group.add( shape );
 

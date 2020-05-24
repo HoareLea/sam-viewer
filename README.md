@@ -55,6 +55,9 @@ See also
     * https://www.dummies.com/web-design-development/site-development/how-to-name-html-files/
     * https://www.thesitewizard.com/webdesign/create-good-filenames.shtml
     * https://www.surrealcms.com/blog/best-practices-for-filenames-on-the-web.html
+* All versions of the scripts must always be runnable with a single click
+* Our scripts run well on phone, tablet and high end workstation
+* We develop around what most people mostly use: Windows 10, Chrome browser, VS Code and so on
 
 If you like this effort
 

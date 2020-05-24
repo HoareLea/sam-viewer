@@ -84,10 +84,7 @@ RAY.onClick = function () {
 
 RAY.getHtm = function ( intersected ) {
 
-
-
 	const htm = JSON.stringify( intersected.object, null, "<br>" ).slice( 1, - 1 ).replace( /[",]/g, "");
-
 
 	// htm = `
 	// 	<a href="https://en.wikipedia.org/wiki/${ name }" target="_blank">${ name }</a><br>
