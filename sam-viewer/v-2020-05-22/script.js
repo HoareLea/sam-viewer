@@ -13,7 +13,7 @@ divDescription.innerHTML = document.head.querySelector( "[ name=description ]" )
 let json;
 let group;
 
-
+const v2 = ( x, y ) => new THREE.Vector2( x, y );
 
 function init() {
 
