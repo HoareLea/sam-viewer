@@ -78,8 +78,6 @@ THR.onStart = function () {
 
 
 
-
-
 THR.zoomObjectBoundingSphere = function ( obj = group ) {
 	//console.log( "obj", obj );
 
@@ -164,21 +162,6 @@ THR.addLights = function () {
 
 
 
-
-THR.addGround = function () {
-
-	const geometry = new THREE.PlaneBufferGeometry( 2000, 2000 );
-	const material = new THREE.MeshPhongMaterial( { color: 0xaaaaaa, side: 2 } );
-	const mesh = new THREE.Mesh( geometry, material );
-	mesh.position.z = -25;
-	mesh.receiveShadow = true;
-
-	scene.add( mesh );
-	
-
-};
-
-
 THR.addLights = function() {
 
 	//scene.add( new THREE.AmbientLight( 0x404040 ) );
@@ -207,6 +190,21 @@ THR.addLights = function() {
 	scene.add( new THREE.CameraHelper( lightDirectional.shadow.camera ) );
 
 }
+
+
+
+THR.addGround = function () {
+
+	const geometry = new THREE.PlaneBufferGeometry( 2000, 2000 );
+	const material = new THREE.MeshPhongMaterial( { color: 0xaaaaaa, side: 2 } );
+	const mesh = new THREE.Mesh( geometry, material );
+	mesh.position.z = -25;
+	mesh.receiveShadow = true;
+
+	scene.add( mesh );
+	
+};
+
 
 
 THR.addMesh = function ( size = 20 ) {
@@ -255,9 +253,9 @@ THR.setStats = function () {
 
 
 	const render = renderer.info.render;
-
-	//divInfo.classList.add( "navText" );
-	divInfo.innerHTML = `
+		
+	detView.open = true;
+	divLog.innerHTML = `
 	Renderer<br>
 	Calls: ${render.calls}<br>
 	Triangles: ${render.triangles.toLocaleString()}<br>

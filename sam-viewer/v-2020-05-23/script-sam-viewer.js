@@ -17,7 +17,30 @@ let group;
 
 const v2 = ( x, y ) => new THREE.Vector2( x, y );
 
+
+const colors = {
+
+	InteriorWall: 0x008000,
+	ExteriorWall: 0xFB400,
+	Roof: 0x800000,
+	InteriorFloor: 0x80FFFF,
+	ExposedFloor: 0x40B4FF,
+	Shade: 0xFFCE9D,
+	UndergroundWall: 0xA55200,
+	UndergroundSlab: 0x804000,
+	Ceiling: 0xFF8080,
+	Air: 0xFFFF00,
+	UndergroundCeiling: 0x408080,
+	RaisedFloor: 0x4B417D,
+	SlabOnGrade: 0x804000,
+	FreestandingColumn: 0x808080,
+	EmbeddedColumn: 0x80806E
+
+};
+
+
 let timeStart; 
+
 
 
 function init() {
@@ -40,6 +63,8 @@ function init() {
 	const url = "../../sam-sample-files/TwoLevelsRevit.JSON";
 
 	requestFile(url, onLoadSam);
+
+	FRJ.init();
 
 	HRT.initHeart();
 
@@ -84,9 +109,9 @@ function getJsonLine(index) {
 
 	item = json[index]
 
-	//item.Apertures = Array.isArray( item.Apertures ) ? item.Apertures : [ item.Apertures ]
 
-	const holes = []
+	const holes = [];
+
 	if ( item.Apertures ) {
 
 		//console.log( "item.Apertures", item.Apertures );
@@ -163,7 +188,7 @@ function getJsonLine(index) {
 
 	let vertices = [];
 
-	let colors = ["red", "green", "yellow", "blue"];
+	//let colors = ["red", "green", "yellow", "blue"];
 	for (let edge of b3d.Edge2DLoop.BoundaryEdge2Ds) {
 
 		//console.log( "edge", edge.Curve2D );
@@ -176,10 +201,10 @@ function getJsonLine(index) {
 		const cVV = new THREE.Vector3(cO.X + cV.X, cO.Y + cV.Y, 0);
 		//console.log( "cV", cO.X + cV.X, cO.Y + cV.Y );
 
-		let line = getLine([cOV, cVV], colors.pop());
-		line.position.copy(origin);
-		//line.up.copy( axisX ); 
-		line.lookAt(origin.clone().add(normal));
+		// let line = getLine([cOV, cVV], colors.pop());
+		// line.position.copy(origin);
+		// //line.up.copy( axisX ); 
+		// line.lookAt(origin.clone().add(normal));
 
 		//group.add( line );
 
@@ -188,7 +213,10 @@ function getJsonLine(index) {
 	}
 	//console.log( "vertices", vertices );
 
-	let shape = getShape(vertices, holes );
+	const color = colors[ item.PanelType];
+	//console.log( "color", color, item.PanelType );
+
+	let shape = getShape(vertices, holes, color );
 	shape.position.copy(origin);
 	shape.up.copy(axisX);
 
@@ -219,14 +247,14 @@ function getLine(vertices, color = 0x000000) {
 }
 
 
-function getShape(vertices, holes ) {
+function getShape(vertices, holes, color ) {
 
 	const shapeGeo = new THREE.Shape(vertices);
 	shapeGeo.holes = holes;
 	const geometry = new THREE.ShapeGeometry(shapeGeo);
 	geometry.applyMatrix4(new THREE.Matrix4().makeRotationZ(0.5 * Math.PI));
 
-	const material = new THREE.MeshNormalMaterial({ side: 2 });
+	const material = new THREE.MeshPhongMaterial({ color: color, opacity: 0.85, side: 2, transparent: true });
 	const shape = new THREE.Mesh(geometry, material);
 	shape.receiveShadow = true;
 	shape.castShadow = true;

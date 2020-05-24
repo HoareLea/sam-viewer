@@ -8,7 +8,7 @@
 	<meta name="description" content="Part of a series of online interactive AEC viewers designed to be forked, hacked and remixed  with real-time interactive 3D graphics in your browser using the WebGL and the Three.js JavaScript library" />
 	<meta name="keywords" content="Three.js,WebGL,JavaScript,GitHub,FOSS,3D,STEM" />
 
-	<title>Globe Template</title>
+	<title>SAM Viewer</title>
 
 	<link rel="stylesheet" href="./style-2020-05-23.css">
 
@@ -18,11 +18,12 @@
 	<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r116/build/three.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r116/examples/js/controls/OrbitControls.js"></script>
 
-	<script src="js/thr-threejs-2020-05-23-1745.js"></script>
+	<script src="js/thr-threejs-aec-2020-05-23.js"></script>
 
 	<script src="js/hrt-heart-2020-05-23.js"></script>
 	<script src="js/scc-screen-ccapture-2020-05-23.js"></script>
 	<script src="js/ray-raycaster-sam-2020-05-23.js"></script>
+	
 
 	<details id=detNav open>
 
@@ -54,11 +55,17 @@
 
 			</header>
 
+			<details id=detFile >
 
-			<details>
+				<summary class="gmd-1">file menu</summary>
+
+				<div id="FRJdivFileReaderJson" ></div>
+
+			</details>
+
+			<details id=detView >
 
 				<summary class="gmd-1">view menu</summary>
-
 
 				<p>
 					Select individual panels. Use cursor keys to scroll through the list.<br>
@@ -68,8 +75,6 @@
 
 				<div id="divTime"></div>
 
-				<div id="divInfo"></div>
-
 				<div id=divLog > </div>
 
 				<hr>
@@ -78,9 +83,7 @@
 
 			<br>
 
-				<center><img height=32width="32" src="../../assets/icons/noun_single_1185687.svg"> </center>
-
-
+			<center><img title="Single finger for single method!" height="32" width="32" src="../../assets/icons/noun_single_1185687.svg"> </center>
 
 		</nav>
 
@@ -102,6 +105,7 @@
 
 
 	<script src="script-sam-viewer.js"></script>
+	<script src="js/frj-file-reader-json-2020-02-10.js"></script>
 
 	<script>
 
