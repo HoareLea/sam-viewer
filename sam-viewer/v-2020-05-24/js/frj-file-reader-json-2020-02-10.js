@@ -22,24 +22,27 @@ FRJ.getMenu = function () {
 
 	const htm = `
 		<span class="info">?? <span class="infoTooltip">
-			<a href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader" target="_blank">file reader on mdn</a>
-			aaa bbb cccc
+			See <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader" target="_blank">file reader on mdn</a>
+			for details regarding opening a file on your computer in JavaScript.
 		</span></span>
 
 
-	<br>	Open a file on your computer
-
+	<div>Open a file on your computer</div>
 
 
 	<!-- accept = '.rad, .res, .pts' multiple -->
 
 	<p>
-		<input type=file id=FRTinpFile onchange=FRJ.openFile(this);  >
+		<input type=file id=FRTinpFile onchange=FRJ.openFile(this); accept=".json" >
 	</p>
 
-	<!--
-	<textarea id=FRTtxtArea style=height:500px;overflow:auto;width:100%; ></textarea>
-	-->
+	<div id=FRJdivOnLoad ></div>
+
+	<div>
+	Raw JSON
+	<textarea id=FRJtxtRawJson style=height:100px;overflow:auto;width:100%; ></textarea>
+	</div>
+
 
 	<p id=FRTpStats ></p>
 
@@ -66,9 +69,10 @@ FRJ.openFile = function ( files ) {
 
 		//window.addEventListener( "onloadjson", FRJ.onLoad, false )
 
-		//FRJ.onLoad();
+		FRJ.onLoad();
 
-		alert( "Should be working soon!")
+		alert( "Should be working soon!");
+
 		window.dispatchEvent( FRJ.event );
 
 
@@ -84,14 +88,16 @@ FRJ.onLoad = function () {
 	//FRTtxtArea.innerHTML = FRJ.result;
 	const files = FRJ.files;
 
-	GFOtxtRawJson.value = FRJ.result;
+	FRJtxtRawJson.value = FRJ.result;
 
-	GFOdivOnLoad.innerHTML = `
+	FRJdivOnLoad.innerHTML = `
+	<p>
 		name: ${ files.files[ 0 ].name }<br>
 		size: ${ files.files[ 0 ].size.toLocaleString() } bytes<br>
 		type: ${ files.files[ 0 ].type }<br>
 		modified: ${files.files[ 0 ].lastModifiedDate.toLocaleDateString() }<br>
-		time to load: ${ ( performance.now() - FRJ.timeStart ).toLocaleString() } ms`;
+		time to load: ${ ( performance.now() - FRJ.timeStart ).toLocaleString() } ms
+	</p>`;
 
 	GFOdivFileLoaded.innerHTML = "";
 

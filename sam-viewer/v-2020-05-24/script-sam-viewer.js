@@ -7,7 +7,7 @@ aGlitchHref = "https://glitch.com/~hoarelea-sam-viewer";
 aGithubHref = "https://github.com/HoareLea/sam-viewer/";
 
 const description =
-`
+	`
 Online Sustainable Analytical Model (SAM) JSON file interactive 3D viewer in your browser 
 designed to be forked, hacked and remixed using the WebGL and the 
 <a href="https://threejs.org" target="_blank">Three.js</a> JavaScript library
@@ -18,7 +18,7 @@ designed to be forked, hacked and remixed using the WebGL and the
 let json;
 let group;
 
-const v2 = ( x, y ) => new THREE.Vector2( x, y );
+const v2 = (x, y) => new THREE.Vector2(x, y);
 
 
 const colors = {
@@ -43,7 +43,7 @@ const colors = {
 
 };
 
-let timeStart; 
+let timeStart;
 
 
 
@@ -52,12 +52,12 @@ function init() {
 	timeStart = performance.now();
 
 	aGlitch.href = aGlitchHref;
-	
+
 	aGithub.href = aGithubHref;
-	
-	divDescription.innerHTML = description;     
-	
-	aTitle.innerHTML += ` ${ version }`;
+
+	divDescription.innerHTML = description;
+
+	aTitle.innerHTML += ` ${version}`;
 
 	THR.init();
 
@@ -115,10 +115,10 @@ function getJsonLine(index) {
 
 	const holes = [];
 
-	if ( item.Apertures ) {
+	if (item.Apertures) {
 
 		//console.log( "item.Apertures", item.Apertures );
-		for ( aperture of item.Apertures ) {
+		for (aperture of item.Apertures) {
 
 			//console.log( "aperture", aperture );
 
@@ -126,40 +126,40 @@ function getJsonLine(index) {
 
 			let colors = ["red", "green", "yellow", "blue"];
 			for (let edge of aperture.PlanarBoundary3D.Edge2DLoop.BoundaryEdge2Ds) {
-		
+
 				//console.log( "edge", edge.Curve2D );
-		
+
 				const cO = edge.Curve2D.Origin;
 				const cOV = new THREE.Vector3(cO.X, cO.Y, 0);
 				//console.log( "cO", cO.X, cO.Y );
-		
+
 				const cV = edge.Curve2D.Vector;
 				const cVV = new THREE.Vector3(cO.X + cV.X, cO.Y + cV.Y, 0);
 				//console.log( "cV", cO.X + cV.X, cO.Y + cV.Y );
-		
+
 				let line = getLine([cOV, cVV], colors.pop());
 				//line.position.copy(origin);
 				//line.up.copy( axisX ); 
 				//line.lookAt(origin.clone().add(normal));
-		
-				group.add( line );
-		
+
+				group.add(line);
+
 				vertices.push(v2(cVV.x, cVV.y));
-		
+
 			}
 
-			const hole = new THREE.Path().setFromPoints( vertices );
+			const hole = new THREE.Path().setFromPoints(vertices);
 
-			holes.push( hole );
-		
+			holes.push(hole);
+
 			//console.log( "vertices", vertices );
 
 		}
 
 	}
-		
 
-	
+
+
 	let b3d = item.PlanarBoundary3D;
 	//console.log( "\n\nBoundary", b3d  );
 
@@ -216,10 +216,10 @@ function getJsonLine(index) {
 	}
 	//console.log( "vertices", vertices );
 
-	const color = colors[ item.PanelType];
+	const color = colors[item.PanelType];
 	//console.log( "color", color, item.PanelType );
 
-	let shape = getShape(vertices, holes, color );
+	let shape = getShape(vertices, holes, color);
 	shape.position.copy(origin);
 	shape.up.copy(axisX);
 
@@ -250,7 +250,7 @@ function getLine(vertices, color = 0x000000) {
 }
 
 
-function getShape(vertices, holes, color ) {
+function getShape(vertices, holes, color) {
 
 	const shapeGeo = new THREE.Shape(vertices);
 	shapeGeo.holes = holes;
@@ -315,7 +315,7 @@ function setData(index) {
 
 	htm =
 
-	`
+		`
 	Origin:<br>${ pO.X.toLocaleString()}, ${pO.Y.toLocaleString()}, ${pO.Z.toLocaleString()}<br><br>
 	Normal:<br>${ pN.X}, ${pN.Y}, ${pN.Z}<br><br>
 	X-axis:<br>${ pX.X}, ${pX.Y}, ${pX.Z}<br><br>
