@@ -27,7 +27,7 @@
 
 	<details id=detNav open>
 
-		<summary id=sumNavMenu class="gmd-1">show || hide menu</summary>
+		<summary id=sumNavMenu class="sumPrimary gmd-1">show || hide menu</summary>
 
 		<nav id="navMenu" class="gmd-2">
 
@@ -57,7 +57,7 @@
 
 			<details id=detFile>
 
-				<summary class="gmd-1">file menu</summary>
+				<summary class="sumPrimary gmd-1">file menu</summary>
 
 				<div id="FRJdivFileReaderJson"></div>
 
@@ -65,7 +65,7 @@
 
 			<details id=detView>
 
-				<summary class="gmd-1">view menu</summary>
+				<summary class="sumPrimary gmd-1">view menu</summary>
 
 				<p>
 					Select individual panels. Use cursor keys to scroll through the list.<br>
@@ -78,6 +78,14 @@
 				<div id=divLog> </div>
 
 				<hr>
+
+			</details>
+
+			<details id=detData>
+
+				<summary class="sumPrimary gmd-1">data menu</summary>
+
+				<div id=JTVdivJsonTreeView ></div>
 
 			</details>
 
@@ -106,6 +114,7 @@
 
 	<script src="script-sam-viewer.js"></script>
 	<script src="js/frj-file-reader-json-2020-02-10.js"></script>
+	<script src="json-tree-view/jtv-json-tree-view-2020-01-24.js"></script>
 
 	<script>
 		init(); // see script-template.js

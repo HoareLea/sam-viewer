@@ -92,6 +92,9 @@ FRJ.onLoad = function () {
 
 	//FRJtxtRawJson.value = FRJ.result;
 
+	JTV.json = FRJ.json;
+	JTVdivJsonTree.innerHTML = JTV.parseJson( JTV.root, FRJ.json, 0 );
+
 
 	FRJdivOnLoad.innerHTML = `
 	<p>

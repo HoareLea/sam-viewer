@@ -1,5 +1,5 @@
 
-const version = "2020-05-24-1240";
+const version = "2020-05-24-1337";
 
 
 aGlitchHref = "https://glitch.com/~hoarelea-sam-viewer";
@@ -103,6 +103,8 @@ function onLoadSam(response) {
 	RAY.intersectObjects = panels;
 
 	RAY.addMouseMove();
+
+	JTVdivJsonTree.innerHTML = JTV.parseJson( JTV.root, json, 0 );
 
 }
 

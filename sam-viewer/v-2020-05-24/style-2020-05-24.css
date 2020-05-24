@@ -87,13 +87,7 @@ input[type="range"]::-webkit-slider-thumb {
 	vertical-align: bottom;
 }
 
-summary {
-	background-color: #eee;
-	border-radius: 2ch;
-	cursor: pointer;
-	outline: none;
-	padding: 1ch;
-}
+
 
 
 .gmd-1 {
@@ -150,8 +144,24 @@ summary {
 	position: absolute;
 }
 
-#sumNavMenu {
-	margin: 1ch;
+.sumPrimary {
+	background-color: #eee;
+	border-radius: 2ch;
+	cursor: pointer;
+	outline: none;
+	padding: 1ch;
+}
+
+
+
+#divPopUp {
+	background-color: white;
+	border-radius: 0.5ch;
+	margin: 1ch 0;
+	padding: 1ch;
+	position: absolute;
+	left: 30%;
+	top: 30%;
 }
 
 #navMenu {
@@ -167,12 +177,7 @@ summary {
 	z-index: 5;
 }
 
-#divPopUp {
-	background-color: white;
-	border-radius: 0.5ch;
-	margin: 1ch 0;
-	padding: 1ch;
-	position: absolute;
-	left: 30%;
-	top: 30%;
+
+#sumNavMenu {
+	margin: 1ch;
 }
