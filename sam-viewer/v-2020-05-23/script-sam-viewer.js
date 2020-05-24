@@ -49,7 +49,7 @@ function init() {
 
 	divDescription.innerHTML = description;
 
-	aGlitch.href = "https://glitch.com/~sam-viewer";
+	aGlitch.href = "https://glitch.com/~hoarelea-sam-viewer";
 
 	aGithub.href = 
 	"https://github.com/HoareLea/sam-viewer/";

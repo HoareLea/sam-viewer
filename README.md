@@ -6,7 +6,10 @@ value="You are now in a GitHub web page view - Click this button to view this re
 # Online Sustainable Analytical Model (SAM) JSON file interactive 3D viewer
 
 
-## Canonical link: https://hoarelea.github.io/sam-viewer/sam-viewer/
+## Canonical links: 
+
+* https://hoarelea.github.io/sam-viewer/sam-viewer/
+* https://hoarelea-sam-viewer.glitch.me/sam-viewer/
 
 See also
 

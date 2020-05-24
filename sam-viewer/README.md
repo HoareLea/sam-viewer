@@ -39,13 +39,18 @@ _<small>SAM Viewer</small>_
 
 ## Change Log
 
+* https://hoarelea.github.io/sam-viewer/sam-viewer/
 
 ### 2020-05-23 ~ Theo
+
+Updates include:
 
 * Much simplification of the update or release management process
 * Start of the calcs for the apertures
 * Start of opening local JSON files
 * Pick out a 'single' icon from Noun project
+* Add 'easter egg'
+
 
 
 ### 2020-05-22 ~ Theo
