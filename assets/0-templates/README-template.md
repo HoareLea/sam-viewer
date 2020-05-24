@@ -4,7 +4,7 @@
 value='You are now in a GitHub web page view - Click this button to view this read me file as source code' ></div>
 
 
-# [Assets Icons Read Me]( https://ladybug.tools/spider-covid-19-viz-3d/readme.html#assets/icons/README.md )
+# [ZZZZZ Read Me]( https://ladybug.tools/spider-covid-19-viz-3d/readme.html#xxxxxx/README.md )
 
 <!--
 <iframe src=https://ladybug.tools/spider-covid-19-viz-3d/xxxxxx/ width=100% height=500px >Iframes are not viewable in GitHub source code view</iframe>
@@ -14,12 +14,7 @@ _basic-html.html_
 -->
 
 <details open >
-<summary>Credits</summary>
-
-* noun_Globe_2117848.svg ~ Globe by Markus from the Noun Project
-* noun_Home_3359355.svg ~ Home by Arvelio2001 from the Noun Project 
-* noun_Information_585560.svg ~ Information by Delwar Hossain from the Noun Project
-* noun_single_1185687.svg / .png ~ single by DinosoftLab from the Noun Project
+<summary>Concept</summary>
 
 
 </details>

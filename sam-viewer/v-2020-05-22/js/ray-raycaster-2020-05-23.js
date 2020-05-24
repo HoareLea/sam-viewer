@@ -50,7 +50,7 @@ RAY.onMouseMove = function ( event ) {
 
 			divPopUp.hidden = false;
 			divPopUp.style.maxHeight = "50ch";
-			divPopUp.style.left = event.clientX + "px";
+			divPopUp.style.left = ( event.clientX + 30 ) + "px";
 			divPopUp.style.top = event.clientY + "px";
 			divPopUp.innerHTML = RAY.getHtm( intersected );
 
@@ -84,10 +84,7 @@ RAY.onClick = function () {
 
 RAY.getHtm = function ( intersected ) {
 
-
-
 	const htm = JSON.stringify( intersected.object, null, "<br>" ).slice( 1, - 1 ).replace( /[",]/g, "");
-
 
 	// htm = `
 	// 	<a href="https://en.wikipedia.org/wiki/${ name }" target="_blank">${ name }</a><br>

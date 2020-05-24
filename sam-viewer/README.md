@@ -39,7 +39,16 @@ _<small>SAM Viewer</small>_
 
 ## Change Log
 
+
 ### 2020-05-23 ~ Theo
+
+* Much simplification of the update or release management process
+* Start of the calcs for the apertures
+* Start of opening local JSON files
+* Pick out a 'single' icon from Noun project
+
+
+### 2020-05-22 ~ Theo
 
 Updates include
 
@@ -57,7 +66,7 @@ Updates include
     * Yada yada
 * Simplified pop-up text
 
-### 2020-05-22 ~ Theo
+### 2020-05-21 ~ Theo
 
 * Fork to HoareLea
 

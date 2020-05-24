@@ -18,6 +18,8 @@ See also
 
 * 2020-05-21 ~ Theo ~ Add Apertures
 * 2020-05-21 ~ Theo ~ Add colors to the panels
+* 2020-05-23 ~ Theo ~ Add open file using file dialog box
+* 2020-05-23 ~ Theo ~ Add tree view menu
 
 
 ## Issues
@@ -53,11 +55,14 @@ See also
     * https://www.dummies.com/web-design-development/site-development/how-to-name-html-files/
     * https://www.thesitewizard.com/webdesign/create-good-filenames.shtml
     * https://www.surrealcms.com/blog/best-practices-for-filenames-on-the-web.html
+* All versions of the scripts must always be runnable with a single click
+* Our scripts run well on phone, tablet and high end workstation
+* We develop around what most people mostly use: Windows 10, Chrome browser, VS Code and so on
 
 If you like this effort
 
-    * Please give this repository a star
-    * sign up to receive notices of issues
+* Please give this repository a star
+* sign up to receive notices of issues
 
 
 ## Change Log
