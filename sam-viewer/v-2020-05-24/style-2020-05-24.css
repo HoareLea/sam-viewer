@@ -1,6 +1,6 @@
 /* Copyright 2020 Theo Armour. MIT License */
 
-@import url( "https://fonts.googleapis.com/css?family=Lato:300,400,700" );
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 
 :root {
 	font-size: 100%;
@@ -108,12 +108,12 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .info {
-  cursor: pointer;
-  float: right;
+	cursor: pointer;
+	float: right;
 }
 
 .info:hover {
-	background-color: yellow;  
+	background-color: yellow;
 }
 
 .infoTooltip {
@@ -132,7 +132,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 
-.info:hover > .infoTooltip {
+.info:hover>.infoTooltip {
 	display: block;
 }
 

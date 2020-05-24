@@ -19,10 +19,9 @@ See also
 
 ## To Do / Wish List
 
-* 2020-05-21 ~ Theo ~ Add Apertures
-* 2020-05-21 ~ Theo ~ Add colors to the panels
-* 2020-05-23 ~ Theo ~ Add open file using file dialog box
-* 2020-05-23 ~ Theo ~ Add tree view menu
+* 2020-05-24 ~ Theo ~ Bi-directional link between 3D model and JSON Tree View
+* 2020-05-21/24 ~ Theo ~ Fix Apertures
+
 
 
 ## Issues
@@ -72,6 +71,14 @@ If you like this effort
 
 See also change logs in readme files in individual folders
 
+
+### 2020-05-24 ~ Theo
+
+Done or dealt with for the most part
+
+* 2020-05-21 ~ Theo ~ Add colors to the panels
+* 2020-05-23 ~ Theo ~ Add open file using file dialog box
+* 2020-05-23 ~ Theo ~ Add tree view menu
 
 ### 2020-05-21 ~ Theo
 
