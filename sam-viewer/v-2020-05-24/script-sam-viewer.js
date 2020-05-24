@@ -1,5 +1,5 @@
 
-const version = "2020-05-24";
+const version = "2020-05-24-1238";
 
 
 aGlitchHref = "https://glitch.com/~hoarelea-sam-viewer";

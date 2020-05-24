@@ -63,7 +63,7 @@ FRJ.openFile = function ( files ) {
 		FRJ.files = files;
 		FRJ.result = reader.result;
 
-		//JTV.json = JSON.parse( FRJ.result );
+		FRJ.json = JSON.parse( FRJ.result );
 
 		FRJ.event = new Event( "onloadJson", {"bubbles": true, "cancelable": false, detail: true } );
 
@@ -71,7 +71,7 @@ FRJ.openFile = function ( files ) {
 
 		FRJ.onLoad();
 
-		alert( "Should be working soon!");
+		//alert( "Should be working soon!");
 
 		window.dispatchEvent( FRJ.event );
 
@@ -88,7 +88,9 @@ FRJ.onLoad = function () {
 	//FRTtxtArea.innerHTML = FRJ.result;
 	const files = FRJ.files;
 
-	FRJtxtRawJson.value = FRJ.result;
+	onLoadSam( FRJ.json ) 
+	//FRJtxtRawJson.value = FRJ.result;
+
 
 	FRJdivOnLoad.innerHTML = `
 	<p>
@@ -99,7 +101,7 @@ FRJ.onLoad = function () {
 		time to load: ${ ( performance.now() - FRJ.timeStart ).toLocaleString() } ms
 	</p>`;
 
-	GFOdivFileLoaded.innerHTML = "";
+	//GFOdivFileLoaded.innerHTML = "";
 
 	//console.log( 'FRJ files', files.files );
 	//console.log( 'FRJ event', event );
