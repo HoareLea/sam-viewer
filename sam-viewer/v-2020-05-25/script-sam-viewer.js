@@ -1,4 +1,4 @@
-const version = "2020-05-25";
+const version = "2020-05-25-1427";
 
 aGlitchHref = "https://glitch.com/~hoarelea-sam-viewer";
 
@@ -83,7 +83,7 @@ function onLoadSam(response) {
 
 	selPanel.innerHTML = new Array(panelsJson.length).fill().map((panel, i) => `<option>${i} ${panelsJson[i].Name}</option>`);
 
-	const panels = panelsJson.map((panel, index) => getPanel(index));
+	const panels = panelsJson.flatMap((panel, index) => getPanel(index));
 
 	setSceneNew(panels);
 
@@ -144,14 +144,14 @@ function getPanel(index) {
 	const origin = new THREE.Vector3(pO.X, pO.Y, pO.Z);
 	//console.log( "origin", origin );
 
-	const mesh = THR.addMesh(0.5);
+	const mesh = THR.addMesh(0.3);
 	items.push(mesh);
 	mesh.position.copy(origin);
 	//console.log( "mesh", mesh );
 
 	const pN = b3d.Plane.Normal;
 	const normal = new THREE.Vector3(pN.X, pN.Y, pN.Z);
-	//console.log( "normal", normal );
+	console.log( "normal", normal );
 
 	const pY = b3d.Plane.AxisY;
 	const axisY = new THREE.Vector3(pY.X, pY.Y, pY.Z);
@@ -199,7 +199,12 @@ function getPanel(index) {
 	shape.userData.index = index;
 	shape.userData.panelsJson = panel;
 
-	return shape;
+	items.push( shape );
+
+	console.log( "items", items );
+
+	return items;
+
 }
 
 function getLine(vertices, color = 0x000000) {
