@@ -14,7 +14,7 @@ const RAY = { // three.js mouse interaction with scene
 
 RAY.addMouseMove = function () {
 
-	renderer.domElement.addEventListener( "mousemove", RAY.onMouseMove );
+	renderer.domElement.addEventListener( "mousedown", RAY.onMouseMove );
 	renderer.domElement.addEventListener( "touchstart", RAY.onMouseMove );
 	renderer.domElement.addEventListener( "touchmove", RAY.onMouseMove );
 
@@ -42,7 +42,7 @@ RAY.onMouseMove = function ( event ) {
 
 	if ( intersects.length ) {
 
-		let intersected = intersects[ 0 ];
+		RAY.intersected = intersects[ 0 ];
 
 		//if ( intersected.instanceId ) {
 
@@ -50,9 +50,9 @@ RAY.onMouseMove = function ( event ) {
 
 			divPopUp.hidden = false;
 			divPopUp.style.maxHeight = "50ch";
-			divPopUp.style.left = ( event.clientX + 30 ) + "px";
+			divPopUp.style.left = ( event.clientX + 0 ) + "px";
 			divPopUp.style.top = event.clientY + "px";
-			divPopUp.innerHTML = RAY.getHtm( intersected );
+			divPopUp.innerHTML = RAY.getHtm( RAY.intersected );
 
 			renderer.domElement.addEventListener( "click", RAY.onClick );
 
@@ -60,11 +60,13 @@ RAY.onMouseMove = function ( event ) {
 
 	} else {
 
-		if ( [ "touchstart", "touchmove" ].includes( event.type ) ) {
+		if ( [ "touchstart", "touchmove", "mousedown" ].includes( event.type ) ) {
 
 			divPopUp.hidden = true;
 
 		}
+
+		RAY.intersected = undefined;
 
 	}
 
@@ -74,7 +76,11 @@ RAY.onMouseMove = function ( event ) {
 
 RAY.onClick = function () {
 
-	divPopUp.hidden = true;
+	if ( !RAY.intersected ) {
+
+		divPopUp.hidden = true;
+
+	}
 
 	renderer.domElement.removeEventListener( "click", RAY.onClick );
 

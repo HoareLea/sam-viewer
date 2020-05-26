@@ -5,7 +5,13 @@ JTE.init = function () {
 
 	//JTHpButtons.innerHTML += JTE.getMenu();
 
-	window.addEventListener( "onloadjson", JTE.onLoad, false );
+	//window.addEventListener( "onloadjson", JTE.onLoad, false );
+
+	//JTE.onLoad();
+
+	const details = JTVdivJsonTreeView.querySelectorAll( "details" );
+
+	details[ 0 ].open = true;
 
 }
 
@@ -23,9 +29,9 @@ JTE.getMenu = function() {
 
 JTE.onLoad = function () {
 
-	JTE.addFaceIds();
+	//JTE.addFaceIds();
 
-	const details = JTVdivJsonTree.querySelectorAll( "details" );
+	const details = JTVdivJsonTreeView.querySelectorAll( "details" );
 
 	details[ 0 ].open = true;
 
@@ -52,7 +58,7 @@ JTE.addFaceIds = function () {
 		}
 	}
 
-	JTVdivJsonTree.innerHTML = JTV.parseJson( JTV.root, JTV.json, 0 );
+	//JTVdivJsonTree.innerHTML = JTV.parseJson( JTV.root, JTV.json, 0 );
 
 };
 
@@ -96,4 +102,4 @@ JTE.addHighLight = function ( id ) {
 
 
 
-JTE.init();
+//JTE.init();

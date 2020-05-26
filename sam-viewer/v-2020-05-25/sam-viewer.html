@@ -55,6 +55,7 @@
 
 			</header>
 
+			<p>Click or touch a panel to view its details. Click &sdotb; icon to display all the panels.</p>
 			<details id=detFile>
 
 				<summary class="sumPrimary gmd-1" title="Open files on your device: ">file menu</summary>
@@ -70,7 +71,7 @@
 				<p>
 					Select individual panels. Use cursor keys to scroll through the list.<br>
 
-					<select id=selPanel oninput=showPanel(); size=10></select>
+					<select id=selPanel oninput=showPanel(this.selectedIndex); size=10></select>
 				</p>
 
 				<div id="divTime"></div>
@@ -84,8 +85,13 @@
 			<details id=detData>
 
 				<summary class="sumPrimary gmd-1" title="Browse the deta in the JSON file" >data menu</summary>
+				
+				<div id="JTHdivJsonTreeHelper" ></div>
+				
+				<div id="JTFdivJsonTreeFinder" style="margin: 1ch 0;""></div>
 
-				<div id=JTVdivJsonTreeView ></div>
+				<div id="JTVdivJsonTreeView" ></div>
+
 
 			</details>
 
@@ -105,7 +111,7 @@
 
 		<button onclick="controls.autoRotate=!controls.autoRotate" title="toggle the rotation" class=ftrButton>&circlearrowright;</button>
 
-		<button onclick="TXT.group.visible=! TXT.group.visible; divPopUp.hidden = true;" title="toggle statistics" class=ftrButton>&sdotb;</button>
+		<button onclick=setSceneNew(panels); title="Show all panels" class=ftrButton>&sdotb;</button>
 
 		<button onclick="THR.setStats();" title="View frames per second and number of draw calls" class=ftrButton>fps</button>
 
@@ -115,6 +121,9 @@
 	<script src="script-sam-viewer.js"></script>
 	<script src="js/frj-file-reader-json-2020-02-10.js"></script>
 	<script src="json-tree-view/jtv-json-tree-view-2020-01-24.js"></script>
+	<script src="json-tree-view/jte-json-tree-edit-2020-01-24.js"></script>
+	<script src="json-tree-view/jth-json-tree-helper-2020-01-24.js"></script>
+	<script src="json-tree-view/jtf-json-tree-finder-2020-02-10.js"></script>
 
 	<script>
 		init(); // see script-sam-viewer.js

@@ -5,7 +5,7 @@ JTH.init = function () {
 
 	JTHdivJsonTreeHelper.innerHTML = JTH.getMenu();
 
-	window.addEventListener( "onloadjson", JTH.onLoad, false );
+	//window.addEventListener( "onloadjson", JTH.onLoad, false );
 
 }
 
@@ -17,9 +17,9 @@ JTH.getMenu = function() {
 	<details open >
 
 		<summary>
-			JSON tree helper
+			JSON tree view helpers
 
-			<span class="couponcode" >??<span class="coupontooltip" >
+			<span class="info" >??<span class="infoTooltip" >
 				JSON tree view helpers</p>
 			</span></span>
 		</summary>
@@ -120,4 +120,4 @@ JTH.addUrls = function () {
 };
 
 
-JTH.init();
+//JTH.init();

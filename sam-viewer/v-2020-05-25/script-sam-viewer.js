@@ -58,6 +58,9 @@ function init() {
 
 	FRJ.init();
 
+
+
+
 	HRT.initHeart();
 }
 
@@ -81,18 +84,24 @@ function onLoadSam(response) {
 	panelsJson = response;
 	console.log("panelsJson", panelsJson);
 
-	selPanel.innerHTML = new Array(panelsJson.length).fill().map((panel, i) => `<option>${i} ${panelsJson[i].Name}</option>`);
+	selPanel.innerHTML = new Array(panelsJson.length)
+		.fill()
+		.map((panel, i) => `<option>${i} ${panelsJson[i].Name}</option>`);
 
-	const panels = panelsJson.flatMap((panel, index) => getPanel(index));
+	panels = panelsJson.flatMap((panel, index) => getPanel(index));
 
 	setSceneNew(panels);
 
-	JTVdivJsonTree.innerHTML = JTV.parseJson(JTV.root, panelsJson, 0);
+	JTV.init();
+	JTH.init();
+	JTF.init();
+
+	
 }
 
 function getPanel(index) {
 	const panel = panelsJson[index];
-
+	//console.log( "panel", panel );
 	const items = [];
 	const holes = [];
 
@@ -103,7 +112,9 @@ function getPanel(index) {
 
 			let vertices = [];
 
-			let colors = ["red", "green", "yellow", "blue"];
+			let lineColors = ["red", "green", "yellow", "blue"];
+			//console.log("\n\n");
+
 			for (let edge of aperture.PlanarBoundary3D.Edge2DLoop.BoundaryEdge2Ds) {
 				//console.log( "edge", edge.Curve2D );
 
@@ -113,9 +124,9 @@ function getPanel(index) {
 
 				const cV = edge.Curve2D.Vector;
 				const cVV = new THREE.Vector3(cO.X + cV.X, cO.Y + cV.Y, 0);
-				//console.log( "cV", cO.X + cV.X, cO.Y + cV.Y );
+				//console.log("cV", cO.X + cV.X, cO.Y + cV.Y);
 
-				let line = getLine([cOV, cVV], colors.pop());
+				let line = getLine([cOV, cVV], lineColors.pop());
 				//line.position.copy(origin);
 				//line.up.copy( axisY );
 				//line.lookAt(origin.clone().add(normal));
@@ -128,15 +139,11 @@ function getPanel(index) {
 			const hole = new THREE.Path().setFromPoints(vertices);
 
 			holes.push(hole);
-
-			//console.log( "vertices", vertices );
 		}
 	}
 
 	let b3d = panel.PlanarBoundary3D;
 	//console.log( "\n\nBoundary", b3d  );
-
-	//b3d = panelsJson[ 0 ].PlanarBoundary3D;5
 
 	const pO = b3d.Plane.Origin;
 	//console.log( "plane.origin", b3d.Plane.Origin );
@@ -151,7 +158,7 @@ function getPanel(index) {
 
 	const pN = b3d.Plane.Normal;
 	const normal = new THREE.Vector3(pN.X, pN.Y, pN.Z);
-	console.log( "normal", normal );
+	//console.log("normal", normal);
 
 	const pY = b3d.Plane.AxisY;
 	const axisY = new THREE.Vector3(pY.X, pY.Y, pY.Z);
@@ -164,7 +171,8 @@ function getPanel(index) {
 
 	let vertices = [];
 
-	//let colors = ["red", "green", "yellow", "blue"];
+	//let lineColors = ["red", "green", "yellow", "blue"];
+
 	for (let edge of b3d.Edge2DLoop.BoundaryEdge2Ds) {
 		//console.log( "edge", edge.Curve2D );
 
@@ -176,12 +184,11 @@ function getPanel(index) {
 		const cVV = new THREE.Vector3(cO.X + cV.X, cO.Y + cV.Y, 0);
 		//console.log( "cV", cO.X + cV.X, cO.Y + cV.Y );
 
-		// let line = getLine([cOV, cVV], colors.pop());
+		// let line = getLine([cOV, cVV], lineColors.pop());
 		// line.position.copy(origin);
-		// //line.up.copy( axisY );
+		// line.up.copy( axisY );
 		// line.lookAt(origin.clone().add(normal));
-
-		//group.add( line );
+		// items.push(line);
 
 		vertices.push(v2(cVV.x, cVV.y));
 	}
@@ -197,20 +204,17 @@ function getPanel(index) {
 	shape.lookAt(origin.clone().add(normal));
 
 	shape.userData.index = index;
-	shape.userData.panelsJson = panel;
+	//shape.userData.panelsJson = panel;
 
-	items.push( shape );
-
-	console.log( "items", items );
+	items.push(shape);
+	//console.log("items", items);
 
 	return items;
-
 }
 
 function getLine(vertices, color = 0x000000) {
 	const geometry = new THREE.Geometry();
 	geometry.vertices = vertices;
-	//geometry.applyMatrix4( new THREE.Matrix4().makeRotationZ( -0.5 * Math.PI ) );
 
 	const material = new THREE.LineBasicMaterial({ color: color });
 	const line = new THREE.Line(geometry, material);
@@ -222,7 +226,6 @@ function getShape(vertices, holes, color) {
 	const shapeGeo = new THREE.Shape(vertices);
 	shapeGeo.holes = holes;
 	const geometry = new THREE.ShapeGeometry(shapeGeo);
-	//geometry.applyMatrix4(new THREE.Matrix4().makeRotationZ(0.5 * Math.PI));
 
 	const material = new THREE.MeshPhongMaterial({ color: color, opacity: 0.85, side: 2, transparent: true });
 	const shape = new THREE.Mesh(geometry, material);
@@ -234,10 +237,10 @@ function getShape(vertices, holes, color) {
 
 //////////
 
-function showPanel() {
-	const shape = getPanel(selPanel.selectedIndex);
+function showPanel( index ) {
+	const shape = getPanel( index );
 
-	setSceneNew([shape]);
+	setSceneNew( shape );
 }
 
 function setData(index) {
@@ -274,22 +277,52 @@ function setData(index) {
 RAY.getHtm = function (intersected) {
 	//console.log( "intersected", intersected );
 
-	const panelsJson = intersected.object.userData.panelsJson;
+	const panelJson = panelsJson[intersected.object.userData.index];
+	//console.log("panelJson", panelJson);
 
 	//let htm = JSON.stringify( intersected.object.userData.panelsJson, null, "" );
-	//console.log( "panelsJson", panelsJson );
 	//htm = htm ? htm.replace( /,/g, ",<br>") : "&nbsp;";
 
-	const apps = panelsJson.Apertures && panelsJson.Apertures.length ? panelsJson.Apertures.length : 0;
-	const htm = `Name: ${panelsJson.Name}<br>
-	Type: ${panelsJson.PanelType}<br>
-	Apertures: ${apps}`;
+	if (panelJson) {
+		const apps = panelJson.Apertures && panelJson.Apertures.length ? panelJson.Apertures.length : 0;
+		const htm = `Name: ${panelJson.Name}<br>
+	Type: ${panelJson.PanelType}<br>
+	Apertures: ${apps}<br>
+	<button onclick=RAY.showFind(${intersected.object.userData.index}); >panel parameters</button>`;
 
-	setData(intersected.object.userData.index);
+		setData(intersected.object.userData.index);
 
-	return htm;
+		return htm;
+	}
 };
 
+
+RAY.showFind = function ( index ) {
+
+	detData.open = true;
+
+	JTH.toggleAll();
+
+	const details = JTVdivJsonTreeView.querySelectorAll("details");
+
+	details[0].open = true;
+
+	panelsHtml = Array.from(details[0].children).slice(1);
+
+	panelsHtml[ index ].open = true;
+
+
+	// JTF.divs.forEach( div => div.style.backgroundColor = "" )
+
+	// const find = JTF.finds[ index ];
+
+	// find.style.backgroundColor = "lightgreen";
+
+	// JTF.openParentNode( find );
+
+	panelsHtml[ index ].scrollIntoView();
+
+};
 //////////
 
 function requestFile(url, callback) {

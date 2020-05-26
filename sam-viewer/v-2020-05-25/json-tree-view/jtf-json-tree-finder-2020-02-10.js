@@ -16,6 +16,8 @@ JTF.init = function () {
 
 	JTFdivJsonTreeFinder.innerHTML = JTF.getMenu();
 
+	
+
 };
 
 
@@ -23,13 +25,13 @@ JTF.init = function () {
 JTF.getMenu = function () {
 
 	const htm = `
-<details open>
+<details>
 
 	<summary>
 
 		JSON Tree finder
 
-		<span class="couponcode">??<span class="coupontooltip">
+		<span class="info">??<span class="infoTooltip">
 			Search the JSON data for any term.
 			<p>Searches are not case sensitive.
 			<p>Click any button displayed to highlight the item in JSON Tree view.</span></span>
@@ -109,4 +111,4 @@ JTF.openParentNode = function ( child ) {
 
 
 
-JTF.init();
+//JTF.init();
