@@ -32,7 +32,7 @@ const colors = {
 	UndergroundWall: 0xa55200,
 	Wall: 0xff8c00,
 	WallExternal: 0xffb400,
-	WallInternal: 0xffb400,
+	WallInternal: 0x008000,
 };
 
 let timeStart;
