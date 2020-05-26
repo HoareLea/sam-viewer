@@ -1,3 +1,7 @@
+<span style=display:none; >[You are now in a GitHub source code view - click this link to view Read Me file as a web page](https://hoarelea.github.io/sam-viewer/sam-viewer/#README.md "View file as a web page.") </span>
+
+<div><input type=button class = "btn btn-secondary btn-sm" onclick=window.location.href="https://github.com/HoareLea/sam-viewer/tree/master/sam-viewer"
+value="You are now in a GitHub web page view - Click this button to view this read me file as source code" ></div>
 # [SAM Viewer readme]( ./readme.html )
 
 GitHub
@@ -8,7 +12,7 @@ GitHub
 Glitch
 
 * https://hoarelea-sam-viewer.glitch.me/
-* hhttps://glitch.com/~hoarelea-sam-viewer
+* https://glitch.com/~hoarelea-sam-viewer
 
 Path to use to import to Glitch: hoarelea/sam-viewer:sam-viewer/v-2020-05-26
 

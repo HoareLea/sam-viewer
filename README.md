@@ -23,7 +23,7 @@ GitHub - supports a community where more than 50 million* people learn, share, a
 Glitch - see the three things here: https://glitch.com/about
 
 * https://hoarelea-sam-viewer.glitch.me/
-* hhttps://glitch.com/~hoarelea-sam-viewer
+* https://glitch.com/~hoarelea-sam-viewer
 
 Link to first version of the viewer:
 
