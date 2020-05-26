@@ -8,7 +8,7 @@ value="You are now in a GitHub web page view - Click this button to view this re
 ## Canonical links:
 
 - https://hoarelea.github.io/sam-viewer/sam-viewer/
-- https://hoarelea-sam-viewer.glitch.me/sam-viewer/
+- https://hoarelea-sam-viewer.glitch.me/
 
 previous version
 
