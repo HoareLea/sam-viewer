@@ -2,7 +2,7 @@
   {
     "_type": "SAM.Analytical.Panel,SAM.Analytical",
     "Name": "SIM_EXT_SLD_Roof DA01",
-    "Guid": "6c0ca007-9204-4db6-890b-1d4703e89a34",
+    "Guid": "9c8a377b-766d-439f-b806-2aeb29d396c5",
     "SAMType": {
       "_type": "SAM.Analytical.Construction,SAM.Analytical",
       "Name": "SIM_EXT_SLD_Roof DA01",
@@ -11,7 +11,7 @@
     "PanelType": "Roof",
     "PlanarBoundary3D": {
       "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-      "Guid": "12b39909-921d-4d1d-acfc-2507b8bcfd38",
+      "Guid": "d8ddb3e0-f78e-47a5-a535-3a5c71ae1fdd",
       "Plane": {
         "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
         "Origin": {
@@ -35,11 +35,11 @@
       },
       "Edge2DLoop": {
         "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-        "Guid": "364b5aae-3c26-4060-9f78-77047ee504de",
+        "Guid": "9854cfbd-4162-4811-b16d-6eda0fa2b8ab",
         "BoundaryEdge2Ds": [
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "e7f81c42-541c-4ca7-9d74-fcd8f0639995",
+            "Guid": "51b633ba-f23e-4774-aeee-fd31892cd62d",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -56,7 +56,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "00b26ebc-54ad-48da-ad26-363e39efb1e1",
+            "Guid": "cc3699a9-aae5-461d-a807-b4b023aa8d62",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -73,7 +73,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "f2d8526b-4cc0-419b-9dd1-443fdb254351",
+            "Guid": "945bcc59-ebc6-439e-b1b5-2de86c01096d",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -90,7 +90,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "186ee5dd-f774-4991-b4fd-53b17d4bc126",
+            "Guid": "f9d31fc7-29d4-46be-bd4d-01e6a2a17ee7",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -111,7 +111,7 @@
     "Apertures": [
       {
         "_type": "SAM.Analytical.Aperture,SAM.Analytical",
-        "Guid": "f2035de2-7976-4f96-aa86-180c6ac73f4c",
+        "Guid": "0131cf96-e6dd-43cc-8e1f-aefc8cabd7b7",
         "SAMType": {
           "_type": "SAM.Analytical.ApertureConstruction,SAM.Analytical",
           "Name": "SIM_EXT_GLZ_SKY DF01",
@@ -120,7 +120,7 @@
         },
         "PlanarBoundary3D": {
           "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-          "Guid": "64aed5e7-2190-481d-881d-4f2ada65816d",
+          "Guid": "8aac88c2-3d8c-43d1-955d-eaf2eca6170f",
           "Plane": {
             "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
             "Origin": {
@@ -144,11 +144,11 @@
           },
           "Edge2DLoop": {
             "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-            "Guid": "5a65b797-be34-4fa8-8175-55015d38daa0",
+            "Guid": "da53ff2d-95f2-44bf-90ee-fcf0d56a1f31",
             "BoundaryEdge2Ds": [
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "307221fd-1a9c-4401-8706-939254444a48",
+                "Guid": "d046a167-03e6-4a35-be0a-58475158651e",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -165,7 +165,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "42e342c5-033f-4288-aa20-f3392d464ba0",
+                "Guid": "9fa78d29-582a-462c-9fc9-a3105b170f83",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -182,7 +182,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "af55bf96-e4a8-4ca5-83f5-74620b23bfa1",
+                "Guid": "c3606284-8379-40e4-827f-2a29e7d134d9",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -199,7 +199,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "fc59da31-6048-4184-8cef-ea6d7081ff73",
+                "Guid": "06f25638-b86a-4489-8c3c-4ef8fa6d0fb6",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -223,7 +223,7 @@
   {
     "_type": "SAM.Analytical.Panel,SAM.Analytical",
     "Name": "SIM_EXT_SLD_Roof DA01",
-    "Guid": "a2e50e9a-1465-4f0a-aa26-ca8ce28ad1b7",
+    "Guid": "2c157881-d51f-4eef-88dd-fc24028111fc",
     "SAMType": {
       "_type": "SAM.Analytical.Construction,SAM.Analytical",
       "Name": "SIM_EXT_SLD_Roof DA01",
@@ -232,7 +232,7 @@
     "PanelType": "Roof",
     "PlanarBoundary3D": {
       "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-      "Guid": "c49dff3c-2475-4bd9-8fcb-02550f3555bf",
+      "Guid": "94fce5d3-88c1-4c0b-b7ad-4afb93fad549",
       "Plane": {
         "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
         "Origin": {
@@ -256,11 +256,11 @@
       },
       "Edge2DLoop": {
         "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-        "Guid": "4e9c515b-83a7-436e-8403-c6da2bbae0b2",
+        "Guid": "afb55f25-f248-420b-80d0-78cae05fc9b5",
         "BoundaryEdge2Ds": [
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "4a316a05-084d-4753-937d-534b7c94d331",
+            "Guid": "f4ff2d36-8bd6-4f86-989c-29f0c926d583",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -277,7 +277,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "b908f94c-f3ec-47ee-8bb4-ae587204799b",
+            "Guid": "4e07cf4b-9a9c-48db-a2bb-72ed1c94e2bb",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -294,7 +294,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "7d20d3cd-f751-424a-b565-55fe49cd687d",
+            "Guid": "2797d44a-a442-4d67-8f54-6f8a27c51f2b",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -311,7 +311,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "fb2a4ed5-2cc3-4c88-ab9f-00406acc8420",
+            "Guid": "4fec6756-1b91-42bf-a469-c610b4b162d9",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -332,7 +332,7 @@
     "Apertures": [
       {
         "_type": "SAM.Analytical.Aperture,SAM.Analytical",
-        "Guid": "be283e13-b83a-427d-aacb-f2aad1ea3062",
+        "Guid": "501b95e2-8fce-49ef-b662-8d273dad248c",
         "SAMType": {
           "_type": "SAM.Analytical.ApertureConstruction,SAM.Analytical",
           "Name": "SIM_EXT_GLZ_SKY DF01",
@@ -341,7 +341,7 @@
         },
         "PlanarBoundary3D": {
           "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-          "Guid": "9358b64f-cb0c-49db-a5a6-aed3de6f78a4",
+          "Guid": "7bc143a8-2714-4fef-a5a8-8f5f8de63223",
           "Plane": {
             "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
             "Origin": {
@@ -365,11 +365,11 @@
           },
           "Edge2DLoop": {
             "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-            "Guid": "d177ac18-813d-4761-96a4-4c13d38e1fe6",
+            "Guid": "df46e3f6-49fb-4b33-ba17-da021a76c13e",
             "BoundaryEdge2Ds": [
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "075083bc-c483-4726-9f4b-92a69be24b1c",
+                "Guid": "8fc130d3-bb93-4a76-b6b9-13c5ebce5be0",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -386,7 +386,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "d9c9e246-2f7f-4dd2-a723-6f80f80ce797",
+                "Guid": "ad72541c-70bf-4923-a382-52fec0d26959",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -403,7 +403,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "4664924a-e559-4c54-8393-68864f40739d",
+                "Guid": "b3e9a2aa-eaae-488d-a796-160a251e06b6",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -420,7 +420,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "d62c3e21-5fca-4aeb-8198-36c68413fcda",
+                "Guid": "9706d7d4-bab0-4649-ac49-f2ab776cdaf4",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -444,7 +444,7 @@
   {
     "_type": "SAM.Analytical.Panel,SAM.Analytical",
     "Name": "SIM_EXT_SLD_Roof DA01",
-    "Guid": "61fbb64a-e029-480c-825b-c01ae695cc33",
+    "Guid": "a56a67ec-42aa-4083-add2-742f658f2ee8",
     "SAMType": {
       "_type": "SAM.Analytical.Construction,SAM.Analytical",
       "Name": "SIM_EXT_SLD_Roof DA01",
@@ -453,7 +453,7 @@
     "PanelType": "Roof",
     "PlanarBoundary3D": {
       "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-      "Guid": "177b3d38-0555-4506-83be-50aa95962fbe",
+      "Guid": "85933661-ddbf-4412-893d-217c82574318",
       "Plane": {
         "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
         "Origin": {
@@ -477,11 +477,11 @@
       },
       "Edge2DLoop": {
         "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-        "Guid": "d90ec92f-422e-44d7-a19d-e992b4143b33",
+        "Guid": "e68ed9cd-0287-4b87-8360-c34a1e4032ef",
         "BoundaryEdge2Ds": [
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "264fa6df-d859-4e5b-b63a-f8d3b0973827",
+            "Guid": "ef46e280-17dc-4647-bd52-08abd3209bbe",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -498,7 +498,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "6c081579-765f-4643-8a2c-e0204a4c149b",
+            "Guid": "e9f12a7a-61ff-4fe8-82ff-6a2003919313",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -515,7 +515,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "4ac0e218-5a5d-44d7-a688-5065dc701ca5",
+            "Guid": "e313c7b0-0dff-4154-b467-90134c7fc88e",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -532,7 +532,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "f57c7911-a7d9-4f69-9080-c07242cafd0a",
+            "Guid": "275ad6e8-f7af-4eee-8255-cfa0ea481eec",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -553,7 +553,7 @@
     "Apertures": [
       {
         "_type": "SAM.Analytical.Aperture,SAM.Analytical",
-        "Guid": "b2492033-0a74-4df8-a588-8ef7b6da5b00",
+        "Guid": "d9862e31-a14a-49ac-9fd3-e0bd4d74927b",
         "SAMType": {
           "_type": "SAM.Analytical.ApertureConstruction,SAM.Analytical",
           "Name": "SIM_EXT_GLZ_SKY DF01",
@@ -562,7 +562,7 @@
         },
         "PlanarBoundary3D": {
           "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-          "Guid": "207e1c61-f364-4d30-bdb2-c040bb4d33bc",
+          "Guid": "2757a652-df1a-45fd-8332-6a86e3330770",
           "Plane": {
             "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
             "Origin": {
@@ -586,11 +586,11 @@
           },
           "Edge2DLoop": {
             "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-            "Guid": "e080e1a1-eec5-4214-9918-e93b5a7ebd10",
+            "Guid": "435f757f-a642-4b18-8714-f6176e7cfa4a",
             "BoundaryEdge2Ds": [
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "2bc84a8a-5552-4294-8e7b-caad62a8a863",
+                "Guid": "e57380ef-a778-44b8-9c7a-0e97f6e1db67",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -607,7 +607,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "aa1b32a3-4b38-41bb-aca1-05015ce0c999",
+                "Guid": "55fb7cc4-a736-49c5-b6e0-87a1af3b3095",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -624,7 +624,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "89378779-92d5-49de-adc7-70f772c8e7f8",
+                "Guid": "350a7543-d8d4-4ad8-97c6-67526d063672",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -641,7 +641,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "705150b5-bf7c-4b94-8155-ac4fb4505307",
+                "Guid": "891943b3-2e36-4804-b39d-929e7fbfa2f7",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -665,7 +665,7 @@
   {
     "_type": "SAM.Analytical.Panel,SAM.Analytical",
     "Name": "SIM_INT_SLD_FLR FLR02",
-    "Guid": "61b79b02-a8f2-4105-959a-63833e63279c",
+    "Guid": "aa2f0dae-9c1e-4385-b46c-04f4caf25602",
     "SAMType": {
       "_type": "SAM.Analytical.Construction,SAM.Analytical",
       "Name": "SIM_INT_SLD_FLR FLR02",
@@ -674,7 +674,7 @@
     "PanelType": "FloorInternal",
     "PlanarBoundary3D": {
       "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-      "Guid": "9700d54d-b61f-4027-a5eb-5998d48521c8",
+      "Guid": "d0572036-7425-4a57-8c11-1da281bb3530",
       "Plane": {
         "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
         "Origin": {
@@ -698,11 +698,11 @@
       },
       "Edge2DLoop": {
         "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-        "Guid": "b98794a1-56e8-4a22-b12a-11d504685dff",
+        "Guid": "d0499206-cb5b-40d2-9e4c-ad7190e748cf",
         "BoundaryEdge2Ds": [
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "7596ee92-5307-41aa-9559-297523b2e08e",
+            "Guid": "5d62a92b-0e23-4366-9732-2290eab089af",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -719,7 +719,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "02970d20-9664-4bec-a5ee-1b02010b45eb",
+            "Guid": "a3724f79-f970-48be-8527-79464da65a3e",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -736,7 +736,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "82d1d9eb-b027-4cb3-9d2e-23d68c60018e",
+            "Guid": "18c9b0bf-0c6f-434f-abf1-c3a28c83b113",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -753,7 +753,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "6a03f6e0-64ab-4c8e-af0e-f61b7112d958",
+            "Guid": "9c4dd7ec-356a-49b0-afb7-07cc2e41774c",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -775,7 +775,7 @@
   {
     "_type": "SAM.Analytical.Panel,SAM.Analytical",
     "Name": "SIM_EXT_SLD_FLR Exposed",
-    "Guid": "fdaf58e4-4073-491c-a208-3e28de605588",
+    "Guid": "5f61693a-f2f7-4547-820c-be2375a79e6c",
     "SAMType": {
       "_type": "SAM.Analytical.Construction,SAM.Analytical",
       "Name": "SIM_EXT_SLD_FLR Exposed",
@@ -784,7 +784,7 @@
     "PanelType": "FloorExposed",
     "PlanarBoundary3D": {
       "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-      "Guid": "84ca6a8d-bbf0-4126-8501-200eda1df464",
+      "Guid": "9a855f3a-5feb-490b-be89-4a267bdca92b",
       "Plane": {
         "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
         "Origin": {
@@ -808,11 +808,11 @@
       },
       "Edge2DLoop": {
         "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-        "Guid": "e2ce53e9-e804-4de9-91de-e27f816e2fcd",
+        "Guid": "1e05463f-ef73-4229-990c-1296b922513f",
         "BoundaryEdge2Ds": [
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "86092090-9549-44d4-84ba-f281eeb36738",
+            "Guid": "128feb47-ed2c-4589-a8be-fe95a277a6ac",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -829,7 +829,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "f2ec9411-c89f-45d8-93de-30c4447415a2",
+            "Guid": "2c2362d9-0d16-404a-8f76-35650f179485",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -846,7 +846,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "821efa3c-2adf-429f-9262-ac2f4f176e47",
+            "Guid": "af4521ba-7aac-40e5-8bb0-c6fcf7e7db28",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -863,7 +863,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "80960505-9f29-4d6f-ba30-dba4be078bad",
+            "Guid": "d725188f-5c58-4dee-889e-24283a5944a4",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -885,7 +885,7 @@
   {
     "_type": "SAM.Analytical.Panel,SAM.Analytical",
     "Name": "SIM_EXT_GRD_FLR FLR01",
-    "Guid": "13e4ae6f-96e1-4b9f-aa48-23ca6c8b1407",
+    "Guid": "0860a561-6286-4e88-b491-5ab56fd6ea2e",
     "SAMType": {
       "_type": "SAM.Analytical.Construction,SAM.Analytical",
       "Name": "SIM_EXT_GRD_FLR FLR01",
@@ -894,7 +894,7 @@
     "PanelType": "Floor",
     "PlanarBoundary3D": {
       "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-      "Guid": "1562a548-df69-4d25-b8b2-013ceaa51cd2",
+      "Guid": "6c73c3c1-c6d2-4753-bfc9-cc406f7c71ee",
       "Plane": {
         "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
         "Origin": {
@@ -918,11 +918,11 @@
       },
       "Edge2DLoop": {
         "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-        "Guid": "ef46f479-15ec-4277-ae6b-db5001f1e1fe",
+        "Guid": "e2fbae7f-c93e-493c-be15-579643f3b20d",
         "BoundaryEdge2Ds": [
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "21e8778a-9049-4481-888e-84e755db4b95",
+            "Guid": "c0baf2c8-0bb7-4b88-a568-ad70c3e2a523",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -939,7 +939,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "d958b597-b83a-4edc-9b21-12a14a497597",
+            "Guid": "4dc67fd1-e02a-4f5d-8577-6b122bd353cb",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -956,7 +956,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "5e9a0f90-875c-4732-bf85-c204ff07d640",
+            "Guid": "1de74738-097f-4f79-8b94-ea3c22d759e3",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -973,7 +973,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "0f32b8bc-0fb8-4668-9343-e5df905de6b0",
+            "Guid": "ff2092f9-96c1-40fb-aaf7-a71009afb62f",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -995,7 +995,7 @@
   {
     "_type": "SAM.Analytical.Panel,SAM.Analytical",
     "Name": "SIM_EXT_GRD_FLR FLR01",
-    "Guid": "8f02e35b-7fc3-4f93-93e1-61d21f3b1967",
+    "Guid": "26f29b6f-b880-4359-ac42-a372b431f20e",
     "SAMType": {
       "_type": "SAM.Analytical.Construction,SAM.Analytical",
       "Name": "SIM_EXT_GRD_FLR FLR01",
@@ -1004,7 +1004,7 @@
     "PanelType": "SlabOnGrade",
     "PlanarBoundary3D": {
       "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-      "Guid": "8e2fed17-14d1-49ae-b9cd-cc178e82f077",
+      "Guid": "7cc8cf45-e23f-4da0-80f9-91a743c043fe",
       "Plane": {
         "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
         "Origin": {
@@ -1028,11 +1028,11 @@
       },
       "Edge2DLoop": {
         "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-        "Guid": "4dce1bae-227a-4935-bfe1-f257e74f386e",
+        "Guid": "554b167e-a5f5-428f-8cdb-26414da23345",
         "BoundaryEdge2Ds": [
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "db6e1458-0060-425a-b79e-a5406d9b8363",
+            "Guid": "90a65bf2-d55b-4c26-a6b1-e0b5bbc30471",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1049,7 +1049,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "c5e942bb-9011-4cb2-822e-777579049e4c",
+            "Guid": "5a434037-8e2f-4c27-b980-7c643192beff",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1066,7 +1066,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "b0189d49-d52a-411d-be12-043760c0d7fd",
+            "Guid": "538c4224-7fd3-4fee-850d-8c1ed8535e6e",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1083,7 +1083,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "43b4d963-f8b8-4a88-9167-b20b76670821",
+            "Guid": "debe0d6d-c073-4024-987a-1494f2361f40",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1105,7 +1105,7 @@
   {
     "_type": "SAM.Analytical.Panel,SAM.Analytical",
     "Name": "SIM_EXT_SLD",
-    "Guid": "0c4106d4-d492-4882-ae22-2830a1b44e17",
+    "Guid": "f450671b-1d0c-48dc-a0d2-9d3f39fa7153",
     "SAMType": {
       "_type": "SAM.Analytical.Construction,SAM.Analytical",
       "Name": "SIM_EXT_SLD",
@@ -1114,7 +1114,7 @@
     "PanelType": "Wall",
     "PlanarBoundary3D": {
       "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-      "Guid": "3d7b68fc-c72a-47a5-b23f-33c513ebef2d",
+      "Guid": "8f4588ed-98a4-42a6-b1a1-7b1dcd2f591c",
       "Plane": {
         "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
         "Origin": {
@@ -1138,11 +1138,11 @@
       },
       "Edge2DLoop": {
         "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-        "Guid": "ef91014e-f3cb-4e10-b6ae-3eca5b84f322",
+        "Guid": "8dab3836-fa20-46b7-9aa9-c1e83770c2ef",
         "BoundaryEdge2Ds": [
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "047d0f97-9031-4bb2-a35d-f12c4d336f29",
+            "Guid": "e020ff53-deba-4f58-ba63-1bcfdd4829db",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1159,7 +1159,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "63d07981-31e9-4d23-b9a0-5562dc1596af",
+            "Guid": "3ea8e989-6743-4906-ab9c-ba2f61e6588b",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1176,7 +1176,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "b6476813-fd7c-497b-bf00-5b2a88648bcf",
+            "Guid": "e5818e36-e5e7-47b2-8313-5e2a839c7947",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1193,7 +1193,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "52083ad4-83c5-4042-802d-e19577e414d5",
+            "Guid": "0616b404-32d6-40b0-8c81-7b7e92805e54",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1214,7 +1214,7 @@
     "Apertures": [
       {
         "_type": "SAM.Analytical.Aperture,SAM.Analytical",
-        "Guid": "532d0cf6-147e-46b5-a8ca-bdf8ab47ba48",
+        "Guid": "52bfe2cc-25a2-481d-aa45-f029c758788c",
         "SAMType": {
           "_type": "SAM.Analytical.ApertureConstruction,SAM.Analytical",
           "Name": "SIM_EXT_GLZ",
@@ -1223,7 +1223,7 @@
         },
         "PlanarBoundary3D": {
           "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-          "Guid": "e27b443e-b835-4c05-884f-3c2701b552ed",
+          "Guid": "d2bb8bfa-bbb6-46fb-8920-3d7b7f3fa3bb",
           "Plane": {
             "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
             "Origin": {
@@ -1247,11 +1247,11 @@
           },
           "Edge2DLoop": {
             "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-            "Guid": "3c5addb0-f123-4396-b4bc-6ed9cfd3a742",
+            "Guid": "d5730d5c-f9b9-4fa7-9d48-d7a206c309ad",
             "BoundaryEdge2Ds": [
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "2692ae32-5e6b-4eda-8400-100ede9a3923",
+                "Guid": "d7899e03-aee1-41aa-a00a-a128043fa9ca",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1268,7 +1268,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "3a386e18-67df-4365-8197-1c56db5799d2",
+                "Guid": "d4f22f60-aa7b-478f-8777-25f43d829b11",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1285,7 +1285,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "b9606ef8-535d-4c22-9c20-2152135982de",
+                "Guid": "df658b80-3e7d-4bb2-822b-159d514cad98",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1302,7 +1302,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "9e9506f5-a919-4419-86da-349862e35fe9",
+                "Guid": "db8dad64-9a13-4a32-a48b-9dcdb805c215",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1326,7 +1326,7 @@
   {
     "_type": "SAM.Analytical.Panel,SAM.Analytical",
     "Name": "SIM_INT_SLD_Partition",
-    "Guid": "2151bf52-1352-4ac4-80ce-1c5368f4b40d",
+    "Guid": "a429b329-22f4-4b18-9b3e-d6f92ee0924f",
     "SAMType": {
       "_type": "SAM.Analytical.Construction,SAM.Analytical",
       "Name": "SIM_INT_SLD_Partition",
@@ -1335,7 +1335,7 @@
     "PanelType": "WallInternal",
     "PlanarBoundary3D": {
       "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-      "Guid": "6273c655-14b2-4bb6-bda4-533750e6aaa4",
+      "Guid": "5813069c-e8ae-4c34-8d77-cc969652686b",
       "Plane": {
         "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
         "Origin": {
@@ -1359,11 +1359,11 @@
       },
       "Edge2DLoop": {
         "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-        "Guid": "c5706230-cbf5-44ad-9c12-34878f77a732",
+        "Guid": "9c52f281-c313-49cb-a146-a888d2a86f1c",
         "BoundaryEdge2Ds": [
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "8f7bf978-776c-4a0d-b1d3-5a3eb7719606",
+            "Guid": "eb97582c-0358-42c4-85b9-61da8cca7b14",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1380,7 +1380,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "dade1c89-6bf7-400a-b41b-cd7311543feb",
+            "Guid": "4f05dccb-84b0-4af1-b1a5-97cb743274ea",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1397,7 +1397,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "8a8068f0-7037-48d2-964c-90fd240ce33f",
+            "Guid": "8111068e-5764-4c71-95f7-63382f10e8ac",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1414,7 +1414,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "1a777825-6704-4f78-a263-b94f9400ee5a",
+            "Guid": "f9748b8e-f55f-4467-9c9c-351efc5fcd17",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1435,7 +1435,7 @@
     "Apertures": [
       {
         "_type": "SAM.Analytical.Aperture,SAM.Analytical",
-        "Guid": "188967bc-1fe4-4e2d-8991-c0b8043b520a",
+        "Guid": "1ecd26f4-a4f9-4054-8aa1-5083428a98b4",
         "SAMType": {
           "_type": "SAM.Analytical.ApertureConstruction,SAM.Analytical",
           "Name": "SIM_INT_GLZ",
@@ -1444,7 +1444,7 @@
         },
         "PlanarBoundary3D": {
           "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-          "Guid": "40504140-c0f9-47a5-8957-0a8af4006429",
+          "Guid": "b88ccd91-95ff-4ff2-ae5c-fc67b2a5fd61",
           "Plane": {
             "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
             "Origin": {
@@ -1468,11 +1468,11 @@
           },
           "Edge2DLoop": {
             "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-            "Guid": "36c09d2f-54e0-49ed-aa4e-42a628d0d626",
+            "Guid": "38669b51-5a70-42fd-b79f-8d08a8c37c8c",
             "BoundaryEdge2Ds": [
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "53a0e3b9-8ee5-4877-bfdb-44f5e511e6be",
+                "Guid": "1e32aabb-9fc6-463d-b812-d23e731f8fe2",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1489,7 +1489,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "51eef1f6-6769-4a1d-ba4f-4b6b0eb49b3f",
+                "Guid": "df316bf2-e107-4cab-9f46-cdfa60b1d5d0",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1506,7 +1506,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "981f5580-3b76-4cdc-85d6-b3e4beba53c7",
+                "Guid": "31316092-9877-4af0-afc2-755905ef2707",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1530,7 +1530,7 @@
   {
     "_type": "SAM.Analytical.Panel,SAM.Analytical",
     "Name": "SIM_EXT_GLZ",
-    "Guid": "f8711fe8-3c9c-4712-a720-a12f12268074",
+    "Guid": "c401cdba-fc76-40f3-990f-a3e7287ba289",
     "SAMType": {
       "_type": "SAM.Analytical.Construction,SAM.Analytical",
       "Name": "SIM_EXT_GLZ",
@@ -1539,7 +1539,7 @@
     "PanelType": "CurtainWall",
     "PlanarBoundary3D": {
       "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-      "Guid": "9c49d821-d9c7-4ead-a05f-8d535ee457b2",
+      "Guid": "fd4099af-e040-4c91-a68b-25feadfd4687",
       "Plane": {
         "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
         "Origin": {
@@ -1563,11 +1563,11 @@
       },
       "Edge2DLoop": {
         "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-        "Guid": "ebf8bd76-ca9e-496d-9167-0163aca0a7d0",
+        "Guid": "ef740e2f-02c6-41f3-8b2c-1947e120329f",
         "BoundaryEdge2Ds": [
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "769d9b63-4186-44c8-bc83-ac583c2b2e81",
+            "Guid": "977d4a20-af44-410d-9acc-808c4d01dfab",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1584,7 +1584,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "9a2f1d70-41e3-4999-ad08-f33cc4223e1c",
+            "Guid": "9bbfd922-586c-416a-844f-5a58c7d3a752",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1601,7 +1601,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "361843be-b907-4104-a917-31e77cdb9ecf",
+            "Guid": "b6d4b6fb-fe45-4d4f-ae01-24240aae3784",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1618,7 +1618,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "ec931f75-e71b-4e5a-a4ea-256cb4cd5902",
+            "Guid": "9562425c-ce8c-493b-bddd-a6a8e26fff33",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1639,7 +1639,7 @@
     "Apertures": [
       {
         "_type": "SAM.Analytical.Aperture,SAM.Analytical",
-        "Guid": "b70973fe-1bfd-474f-a731-8e04a951627c",
+        "Guid": "ddcb0748-c41c-4854-9a06-4cee6e5cda5a",
         "SAMType": {
           "_type": "SAM.Analytical.ApertureConstruction,SAM.Analytical",
           "Name": "SIM_EXT_GLZ",
@@ -1648,7 +1648,7 @@
         },
         "PlanarBoundary3D": {
           "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-          "Guid": "bd07974e-ca6c-4ab1-bf9d-2ac5ba7fd13d",
+          "Guid": "9518c876-a2a8-4276-95ca-c7e103bba1d0",
           "Plane": {
             "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
             "Origin": {
@@ -1672,11 +1672,11 @@
           },
           "Edge2DLoop": {
             "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-            "Guid": "ebb63c39-01ef-4bfa-bc11-3fbb38c053f3",
+            "Guid": "c4becc14-1c36-4d12-8a53-0896c087f62e",
             "BoundaryEdge2Ds": [
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "7d4c64f7-d58d-4ce1-bebd-a67bdcebac30",
+                "Guid": "d5814393-ded3-4ba6-a3bc-787cae97e851",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1693,7 +1693,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "c6ddd4f3-f5fd-4806-8e43-1520a402a44a",
+                "Guid": "c7cb9547-c4e0-45c7-bbe8-aa8aeb396d1f",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1710,7 +1710,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "ca5b47da-c77c-402f-8186-82ecbe66c49f",
+                "Guid": "774dcb42-c22f-4b3b-949e-b31ee9a24523",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1727,7 +1727,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "76da5b02-e8c0-4cd1-bee9-05ac480c8032",
+                "Guid": "5646346a-e1ec-4f64-9ecb-e67d1491a907",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1744,7 +1744,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "73496a36-6516-4b75-a185-eba1f4011705",
+                "Guid": "6b9ef8ea-335d-4c7a-97ee-41d106f4b5ad",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1761,7 +1761,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "ce1d3327-b680-4aa1-a1cb-dbaf93a6f08f",
+                "Guid": "a9d764b1-1a8b-4ae4-b304-f9fa9978f423",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1778,7 +1778,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "9cf2c76e-092b-4d4f-b1f7-89ffabd86bcc",
+                "Guid": "02819683-d96d-4f5f-81a0-6978af477de7",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1795,7 +1795,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "98ca1323-261a-4ef2-b491-a61e1cca9386",
+                "Guid": "c3cffb09-395a-4d99-bbc8-937ed564f900",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1812,7 +1812,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "38079d73-b61d-4c3f-bbeb-ff49deb425b6",
+                "Guid": "040a8354-45ed-4efd-99d1-7b0db43c49d5",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1829,7 +1829,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "b76ffaaf-4609-4375-9a9a-89786ff66450",
+                "Guid": "9f6955f7-385e-496d-af0b-6953d6d3e382",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1846,7 +1846,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "6dd21f7f-f340-41e8-99a1-a3378f53b324",
+                "Guid": "3839b31b-3eec-44c9-8891-56dc77122844",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1863,7 +1863,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "e583c305-7ff8-425e-a598-68918c00b0fd",
+                "Guid": "4e7ba5d2-aa5c-42b7-8769-db075d45f141",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -1887,7 +1887,7 @@
   {
     "_type": "SAM.Analytical.Panel,SAM.Analytical",
     "Name": "SIM_EXT_SLD",
-    "Guid": "da730bd3-c188-4412-a79b-1eab3347e0ef",
+    "Guid": "6d39757d-d868-46c3-bb3f-bf85ca9548fd",
     "SAMType": {
       "_type": "SAM.Analytical.Construction,SAM.Analytical",
       "Name": "SIM_EXT_SLD",
@@ -1896,7 +1896,7 @@
     "PanelType": "Wall",
     "PlanarBoundary3D": {
       "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-      "Guid": "63d8e983-2e1e-4aef-b503-e406f19177d0",
+      "Guid": "57a8075a-e1e8-4d9b-993e-32a8128c02f9",
       "Plane": {
         "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
         "Origin": {
@@ -1920,11 +1920,11 @@
       },
       "Edge2DLoop": {
         "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-        "Guid": "8af03caf-6ba5-4d42-b38c-e2704d85ae40",
+        "Guid": "e439fa78-a765-4b54-bcf8-2e32734117db",
         "BoundaryEdge2Ds": [
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "9f529bb1-6ac1-4669-90de-aa588c726761",
+            "Guid": "25f8ddb1-51dc-470e-8dae-95495a8f0a48",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1941,7 +1941,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "82110233-94a9-4030-b34c-01c0fb3ef20d",
+            "Guid": "fee22fc8-29e0-4ae1-827e-d53a83dcf5a7",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1958,7 +1958,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "b7828e60-51f5-4ed6-ab6d-5973efdd3724",
+            "Guid": "cbb32f59-53cf-4909-91e0-fd8d679b7a16",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1975,7 +1975,7 @@
           },
           {
             "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-            "Guid": "de39b697-0256-4386-b679-a67fdbbfa4b7",
+            "Guid": "60ee6476-40a4-489e-ad0a-54abba2c74da",
             "Curve2D": {
               "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
               "Origin": {
@@ -1996,7 +1996,7 @@
     "Apertures": [
       {
         "_type": "SAM.Analytical.Aperture,SAM.Analytical",
-        "Guid": "18295bb7-569d-4c1c-97d4-6ee7c2ef2d4e",
+        "Guid": "3eda87fe-e951-421c-9db3-9e5b129cefe3",
         "SAMType": {
           "_type": "SAM.Analytical.ApertureConstruction,SAM.Analytical",
           "Name": "SIM_EXT_GLZ",
@@ -2005,7 +2005,7 @@
         },
         "PlanarBoundary3D": {
           "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
-          "Guid": "9f4dc211-5462-4e73-b977-50a20c02a833",
+          "Guid": "8ab759c3-e7fe-41c5-bec7-e828e3e61424",
           "Plane": {
             "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
             "Origin": {
@@ -2029,11 +2029,11 @@
           },
           "Edge2DLoop": {
             "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
-            "Guid": "0ce958f3-aab3-4146-a621-ce14d3a0fe50",
+            "Guid": "5c5c3b36-e7b3-4ac1-a996-52a27d0ad7ca",
             "BoundaryEdge2Ds": [
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "aaf235a5-f4b5-4f4b-94ec-ecc70ce70b35",
+                "Guid": "df94b9a1-e45b-4966-bea2-a873abdda854",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2050,7 +2050,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "2fab2d95-3ee2-44d5-bfec-ee3b565ef875",
+                "Guid": "8e0ac6ad-c77e-4219-99e7-60d80443c1dc",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2067,7 +2067,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "6ebc6339-6ea9-4a76-8119-2148a259d02c",
+                "Guid": "3fc48e87-fb99-405d-a399-befa42f66ffb",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2084,7 +2084,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "db9feefc-c8b4-4237-8359-afd774c82890",
+                "Guid": "c20b4f20-fdf3-4618-94fd-5e363dcce83a",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2101,7 +2101,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "f398ada3-2a61-4178-a611-de4f9bedb913",
+                "Guid": "24c1f83a-4222-496c-84a5-d149531ad055",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2118,7 +2118,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "3a1ea65c-6c8b-4472-a81b-cb3464be40a1",
+                "Guid": "39ebca1d-34e9-4bb7-8b37-462bae9eaa2b",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2135,7 +2135,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "6bf34132-3192-4262-9fd6-105f99151265",
+                "Guid": "56b8fe45-ffcc-4a80-bf86-64f9f5c380a7",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2152,7 +2152,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "2e0bb427-5d14-4352-a7fa-78979390dacb",
+                "Guid": "669e3d90-eeee-47c0-b1cf-88fbf6c542d9",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2169,7 +2169,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "b9ce34c5-ffbc-4561-be8b-8792ba749228",
+                "Guid": "f45a8641-3c93-4a74-8463-2379679dafec",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2186,7 +2186,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "b6f15c9e-f01a-4ab5-bf95-5e5ed20d66e8",
+                "Guid": "56a1b5a2-2a35-44c0-9a3f-5d4530998355",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2203,7 +2203,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "4da1ce97-0fc0-4434-a84b-acc3b2b8427d",
+                "Guid": "9d3ba64a-aadb-4b53-b0c5-87d0c7dee978",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2220,7 +2220,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "f8ec78f5-0095-4f7c-965d-fda521a33723",
+                "Guid": "38dc8e0c-4350-4bf7-91d3-dd464b35a7d9",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2237,7 +2237,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "43d82634-160c-47d2-9cfc-ba8e0136ec2f",
+                "Guid": "749d409b-bf4a-49e5-9f9f-90e1f2bcddbe",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2254,7 +2254,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "49ff1f97-f296-4a3c-9075-37a89434ab30",
+                "Guid": "d4c42dfe-7169-4c92-aa28-acb0f00c82e3",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2271,7 +2271,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "2bf2d657-7ba7-4c42-ba51-06bb378126d0",
+                "Guid": "b5cec412-a1ca-4a6b-8201-33ae0a4a6891",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2288,7 +2288,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "3519f0ad-7bad-467c-af7e-ec7268df0c03",
+                "Guid": "8b467067-6755-4012-9ce8-ff533825428f",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2305,7 +2305,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "ae993422-024c-4490-8137-b562a1f0db24",
+                "Guid": "b5eb548b-304b-4101-a3b1-78afa8d9629d",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2322,7 +2322,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "26a1b7c5-d1b6-4e8a-b76a-9b30ad051733",
+                "Guid": "9e5b69ea-1c23-47fa-94cc-333659b4d88e",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2339,7 +2339,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "87e32017-d1df-4666-bef3-f62b477942ab",
+                "Guid": "23e082ba-6032-4d37-8744-3956b95c54a4",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2356,7 +2356,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "90dbe376-6802-4414-987c-2a7c3f35f6c6",
+                "Guid": "2217a5f5-083d-4d9e-a379-57ed8933576f",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2373,7 +2373,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "9807c49a-4d1e-4cd8-9512-9f7ebdf84ca4",
+                "Guid": "0b8b339e-2ac3-4a48-91c2-e6e572b6f871",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2390,7 +2390,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "f6691edf-90f4-4d7c-bcb2-3a4f9561ccb8",
+                "Guid": "66b4fc7b-133d-47d2-b69b-df8357c2fc10",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2407,7 +2407,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "6cd3499c-bf78-4de0-a0b0-94369512a4cc",
+                "Guid": "957e6f42-d753-4533-b307-39c0b3698d34",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2424,7 +2424,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "4f31354d-7f0c-4466-a2e2-5e2893c53400",
+                "Guid": "aedfdb63-fba0-4bc0-92c5-2a0e9ead9be4",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2441,7 +2441,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "8bca80e9-adcd-45d5-86e5-51cefabbccfc",
+                "Guid": "7b4c3aec-1250-479d-b19b-e8e4209df1d2",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2458,7 +2458,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "d0a0e5bb-6992-4467-945e-3019b13503d4",
+                "Guid": "6427add2-37fb-4af1-8e6f-7a619709d50c",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2475,7 +2475,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "4b47b8e3-2660-4b4f-81d2-94f076a7a400",
+                "Guid": "6a230505-0451-46f3-a50a-d3d7b637eb4f",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2492,7 +2492,7 @@
               },
               {
                 "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
-                "Guid": "5f9fc9f2-5ece-47a7-9d5c-a952da66e60c",
+                "Guid": "66105f34-18c5-49a4-bf72-de13a0146e69",
                 "Curve2D": {
                   "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
                   "Origin": {
@@ -2504,6 +2504,1315 @@
                     "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
                     "X": 3.0,
                     "Y": -2.0
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_type": "SAM.Analytical.Panel,SAM.Analytical",
+    "Name": "SIM_EXT_SLD",
+    "Guid": "7f467317-2877-4217-82e4-993b9d7befc8",
+    "SAMType": {
+      "_type": "SAM.Analytical.Construction,SAM.Analytical",
+      "Name": "SIM_EXT_SLD",
+      "Guid": "8f424c58-6570-4b9b-b753-e7584b7b4494"
+    },
+    "PanelType": "WallExternal",
+    "PlanarBoundary3D": {
+      "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
+      "Guid": "6b6ca581-c8b5-4913-92f7-417e7ca6d9bf",
+      "Plane": {
+        "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
+        "Origin": {
+          "_type": "SAM.Geometry.Spatial.Point3D,SAM.Geometry",
+          "X": 49.333333333333336,
+          "Y": 0.0,
+          "Z": 3.3333333333333335
+        },
+        "Normal": {
+          "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "AxisY": {
+          "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "Edge2DLoop": {
+        "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
+        "Guid": "15689a26-8fd2-4dbd-aacf-ad60c7460372",
+        "BoundaryEdge2Ds": [
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "762cb0c5-2ff2-4c20-85a7-2de83ac3ae7d",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": -3.3333333333333335,
+                "Y": -6.6666666666666643
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": 0.0,
+                "Y": 10.0
+              }
+            }
+          },
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "a39d979b-ecf0-4bce-89c7-3fc2f1fcd7e2",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": -3.3333333333333335,
+                "Y": 3.3333333333333357
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": 10.0,
+                "Y": 0.0
+              }
+            }
+          },
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "f6ec29e4-e344-4970-881e-d1ca3766bb3b",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": 6.6666666666666661,
+                "Y": 3.3333333333333357
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": -10.0,
+                "Y": -10.0
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Apertures": [
+      {
+        "_type": "SAM.Analytical.Aperture,SAM.Analytical",
+        "Guid": "7791fe6d-0f0e-4db3-9f63-d52aa720584d",
+        "SAMType": {
+          "_type": "SAM.Analytical.ApertureConstruction,SAM.Analytical",
+          "Name": "SIM_EXT_GLZ",
+          "Guid": "f70c4ec7-931b-47ed-a95b-1b3df1b9d885",
+          "ApertureType": "Window"
+        },
+        "PlanarBoundary3D": {
+          "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
+          "Guid": "ac2c06af-8ed0-4c84-930a-e02077bdc38c",
+          "Plane": {
+            "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
+            "Origin": {
+              "_type": "SAM.Geometry.Spatial.Point3D,SAM.Geometry",
+              "X": 48.333333333333336,
+              "Y": 0.0,
+              "Z": 1.0
+            },
+            "Normal": {
+              "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+              "X": 0.0,
+              "Y": 1.0,
+              "Z": 0.0
+            },
+            "AxisY": {
+              "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+              "X": -1.0,
+              "Y": 0.0,
+              "Z": 0.0
+            }
+          },
+          "Edge2DLoop": {
+            "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
+            "Guid": "151bc786-bcc0-4383-a7ad-85b0fb796ffc",
+            "BoundaryEdge2Ds": [
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "fa3e18f2-ef1f-4f9e-a434-fe3a1c73615a",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": 0.0,
+                    "Y": 1.3333333333333357
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": 4.0,
+                    "Y": 0.0
+                  }
+                }
+              },
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "bae95243-8a5a-4e1d-8f9a-c13823e284a8",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": 4.0,
+                    "Y": 1.3333333333333357
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": -4.0,
+                    "Y": -4.0
+                  }
+                }
+              },
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "c8b97ab2-c6ed-4dff-8ac7-6fd18c39bb17",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": 0.0,
+                    "Y": -2.6666666666666643
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": 0.0,
+                    "Y": 4.0
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_type": "SAM.Analytical.Panel,SAM.Analytical",
+    "Name": "SIM_EXT_SLD_Roof DA01",
+    "Guid": "6ae1c5b9-f0d2-48a6-ba1a-1e127c3e1c37",
+    "SAMType": {
+      "_type": "SAM.Analytical.Construction,SAM.Analytical",
+      "Name": "SIM_EXT_SLD_Roof DA01",
+      "Guid": "6ebe9f3b-b20d-4583-a5db-3f17d8106016"
+    },
+    "PanelType": "Roof",
+    "PlanarBoundary3D": {
+      "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
+      "Guid": "34b04808-468c-4fb1-9eab-2e1d9020d44a",
+      "Plane": {
+        "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
+        "Origin": {
+          "_type": "SAM.Geometry.Spatial.Point3D,SAM.Geometry",
+          "X": 3.3333333333333335,
+          "Y": -7.666666666666667,
+          "Z": 0.0
+        },
+        "Normal": {
+          "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "AxisY": {
+          "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        }
+      },
+      "Edge2DLoop": {
+        "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
+        "Guid": "684b93d7-4ee0-488b-aefc-4f85a38cfed3",
+        "BoundaryEdge2Ds": [
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "1ebe589b-c236-4fba-a0a0-6b857838a097",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": 3.3333333333333335,
+                "Y": 4.666666666666667
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": 0.0,
+                "Y": -7.0
+              }
+            }
+          },
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "fb4a4e18-ad06-4dd2-99d2-0ee905375631",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": 3.3333333333333335,
+                "Y": -2.333333333333333
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": -10.0,
+                "Y": 0.0
+              }
+            }
+          },
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "ef043cec-2547-4804-b6ce-682963166191",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": -6.6666666666666661,
+                "Y": -2.333333333333333
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": 10.0,
+                "Y": 7.0
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Apertures": [
+      {
+        "_type": "SAM.Analytical.Aperture,SAM.Analytical",
+        "Guid": "d86dd528-e763-400c-9cca-23da221750b8",
+        "SAMType": {
+          "_type": "SAM.Analytical.ApertureConstruction,SAM.Analytical",
+          "Name": "SIM_EXT_GLZ_SKY DF01",
+          "Guid": "6f6dc032-6fa5-43fa-bfef-de5937e95599",
+          "ApertureType": "Window"
+        },
+        "PlanarBoundary3D": {
+          "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
+          "Guid": "2d509c18-665c-4c84-82e7-590e61bc3071",
+          "Plane": {
+            "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
+            "Origin": {
+              "_type": "SAM.Geometry.Spatial.Point3D,SAM.Geometry",
+              "X": 2.333333333333333,
+              "Y": -8.0,
+              "Z": 0.0
+            },
+            "Normal": {
+              "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 1.0
+            },
+            "AxisY": {
+              "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+              "X": 0.0,
+              "Y": 1.0,
+              "Z": 0.0
+            }
+          },
+          "Edge2DLoop": {
+            "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
+            "Guid": "dbb2dec9-cd69-4a7a-b3b6-f7278fdf1b3d",
+            "BoundaryEdge2Ds": [
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "d6165266-0f1e-443d-a650-e508a22fac0b",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": 1.333333333333333,
+                    "Y": 2.0
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": 0.0,
+                    "Y": -3.0
+                  }
+                }
+              },
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "4bcfeafb-358e-4c5a-8f90-db89d0d8cb73",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": 1.333333333333333,
+                    "Y": -1.0
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": -4.0,
+                    "Y": 0.0
+                  }
+                }
+              },
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "915632b4-d8f2-41c6-b8b3-73a4a6713af0",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": -2.666666666666667,
+                    "Y": -1.0
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": 4.0,
+                    "Y": 3.0
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_type": "SAM.Analytical.Panel,SAM.Analytical",
+    "Name": "SIM_EXT_SLD_Roof DA01",
+    "Guid": "1eab73c5-23dc-462b-9610-b443399413a0",
+    "SAMType": {
+      "_type": "SAM.Analytical.Construction,SAM.Analytical",
+      "Name": "SIM_EXT_SLD_Roof DA01",
+      "Guid": "6ebe9f3b-b20d-4583-a5db-3f17d8106016"
+    },
+    "PanelType": "Roof",
+    "PlanarBoundary3D": {
+      "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
+      "Guid": "e3e8d69e-f2df-4ce1-8a4e-2386017d0d05",
+      "Plane": {
+        "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
+        "Origin": {
+          "_type": "SAM.Geometry.Spatial.Point3D,SAM.Geometry",
+          "X": 18.333333333333332,
+          "Y": -7.59630805758356,
+          "Z": -0.3990235005466139
+        },
+        "Normal": {
+          "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+          "X": -9.5161973539299148E-18,
+          "Y": -0.3420201433256691,
+          "Z": 0.93969262078590832
+        },
+        "AxisY": {
+          "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+          "X": 1.0,
+          "Y": -2.7823499696240585E-17,
+          "Z": 0.0
+        }
+      },
+      "Edge2DLoop": {
+        "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
+        "Guid": "5b1c76ad-c51a-4d64-a358-cd1e3d176c7e",
+        "BoundaryEdge2Ds": [
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "538db204-ed20-43dc-a854-196fe9097c60",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": 4.666666666666667,
+                "Y": -3.3333333333333321
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": -7.0,
+                "Y": 0.0
+              }
+            }
+          },
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "a9c21b9b-caa3-4810-83ed-99b327f19fc3",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": -2.3333333333333335,
+                "Y": -3.3333333333333321
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": 0.0,
+                "Y": 10.0
+              }
+            }
+          },
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "21923487-faff-4ecc-8ab2-b416ea1b2d8e",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": -2.3333333333333335,
+                "Y": 6.6666666666666679
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": 7.0,
+                "Y": -10.0
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Apertures": [
+      {
+        "_type": "SAM.Analytical.Aperture,SAM.Analytical",
+        "Guid": "3acf036a-af59-426c-b5bb-3d79eb664a8f",
+        "SAMType": {
+          "_type": "SAM.Analytical.ApertureConstruction,SAM.Analytical",
+          "Name": "SIM_EXT_GLZ_SKY DF01",
+          "Guid": "6f6dc032-6fa5-43fa-bfef-de5937e95599",
+          "ApertureType": "Window"
+        },
+        "PlanarBoundary3D": {
+          "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
+          "Guid": "d1ca5459-bafa-408a-8d1b-e2e38c48c612",
+          "Plane": {
+            "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
+            "Origin": {
+              "_type": "SAM.Geometry.Spatial.Point3D,SAM.Geometry",
+              "X": 17.333333333333332,
+              "Y": -7.9095389311788624,
+              "Z": -0.51303021498850387
+            },
+            "Normal": {
+              "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+              "X": -9.5161973539299148E-18,
+              "Y": -0.3420201433256691,
+              "Z": 0.93969262078590832
+            },
+            "AxisY": {
+              "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+              "X": 1.0,
+              "Y": -2.7823499696240585E-17,
+              "Z": 0.0
+            }
+          },
+          "Edge2DLoop": {
+            "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
+            "Guid": "2f348130-9075-41a1-b91e-3d5d7712ba84",
+            "BoundaryEdge2Ds": [
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "c12097b2-e892-4ffb-a3c5-f8270a480f90",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": 2.0000000000000004,
+                    "Y": -1.3333333333333321
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": -3.0,
+                    "Y": 0.0
+                  }
+                }
+              },
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "138ee7c7-b863-451b-bee5-17d67407d144",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": -0.99999999999999967,
+                    "Y": -1.3333333333333321
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": 1.1102230246251565E-16,
+                    "Y": 4.0
+                  }
+                }
+              },
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "c0375511-6293-4b9f-a2c2-c60c47de92c6",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": -0.99999999999999956,
+                    "Y": 2.6666666666666679
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": 3.0,
+                    "Y": -4.0
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_type": "SAM.Analytical.Panel,SAM.Analytical",
+    "Name": "SIM_EXT_SLD_Roof DA01",
+    "Guid": "3813e13f-c3f8-414d-8ef5-6396f28fd286",
+    "SAMType": {
+      "_type": "SAM.Analytical.Construction,SAM.Analytical",
+      "Name": "SIM_EXT_SLD_Roof DA01",
+      "Guid": "6ebe9f3b-b20d-4583-a5db-3f17d8106016"
+    },
+    "PanelType": "Roof",
+    "PlanarBoundary3D": {
+      "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
+      "Guid": "27d904e5-152b-4fe4-a4b8-2808be948b9e",
+      "Plane": {
+        "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
+        "Origin": {
+          "_type": "SAM.Geometry.Spatial.Point3D,SAM.Geometry",
+          "X": 33.333333333333336,
+          "Y": -7.0833333333333321,
+          "Z": -1.010362971081846
+        },
+        "Normal": {
+          "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+          "X": -5.7097184123579461E-17,
+          "Y": -0.86602540378443915,
+          "Z": 0.49999999999999911
+        },
+        "AxisY": {
+          "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+          "X": 1.0,
+          "Y": -6.5930149247436413E-17,
+          "Z": 0.0
+        }
+      },
+      "Edge2DLoop": {
+        "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
+        "Guid": "f7062d71-d619-47b4-95a1-69fa9a02837b",
+        "BoundaryEdge2Ds": [
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "43af115b-6aff-41b0-9eca-465b83a2cce0",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": 4.6666666666666661,
+                "Y": -3.3333333333333357
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": -7.0,
+                "Y": 0.0
+              }
+            }
+          },
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "a10c0143-1a9f-4b9e-a929-6d58d1ef158d",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": -2.3333333333333335,
+                "Y": -3.3333333333333357
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": 4.4408920985006262E-16,
+                "Y": 10.0
+              }
+            }
+          },
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "fc735387-d96d-412a-90e3-ace2de78cad7",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": -2.333333333333333,
+                "Y": 6.6666666666666643
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": 6.9999999999999991,
+                "Y": -10.0
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Apertures": [
+      {
+        "_type": "SAM.Analytical.Aperture,SAM.Analytical",
+        "Guid": "2df2bb56-7d6d-4d24-b4db-9958d7f1430f",
+        "SAMType": {
+          "_type": "SAM.Analytical.ApertureConstruction,SAM.Analytical",
+          "Name": "SIM_EXT_GLZ_SKY DF01",
+          "Guid": "6f6dc032-6fa5-43fa-bfef-de5937e95599",
+          "ApertureType": "Window"
+        },
+        "PlanarBoundary3D": {
+          "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
+          "Guid": "52525ab5-b730-49ab-80c3-34608f1cae19",
+          "Plane": {
+            "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
+            "Origin": {
+              "_type": "SAM.Geometry.Spatial.Point3D,SAM.Geometry",
+              "X": 32.333333333333336,
+              "Y": -7.2499999999999973,
+              "Z": -1.2990381056766591
+            },
+            "Normal": {
+              "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+              "X": -5.7097184123579461E-17,
+              "Y": -0.86602540378443915,
+              "Z": 0.49999999999999911
+            },
+            "AxisY": {
+              "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+              "X": 1.0,
+              "Y": -6.5930149247436413E-17,
+              "Z": 0.0
+            }
+          },
+          "Edge2DLoop": {
+            "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
+            "Guid": "459488a8-dd98-46f2-9590-b7d70b2417ad",
+            "BoundaryEdge2Ds": [
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "366ad8e9-d366-4469-a852-e36bf04a4a83",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": 2.0,
+                    "Y": -1.3333333333333357
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": -3.0000000000000004,
+                    "Y": 0.0
+                  }
+                }
+              },
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "41727710-daea-49da-af70-a83f8f139ffb",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": -1.0000000000000004,
+                    "Y": -1.3333333333333357
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": 2.2204460492503131E-16,
+                    "Y": 4.0
+                  }
+                }
+              },
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "ffdee82e-58dc-4ced-a23c-90a69b40e4ea",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": -1.0000000000000002,
+                    "Y": 2.6666666666666643
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": 3.0,
+                    "Y": -4.0
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_type": "SAM.Analytical.Panel,SAM.Analytical",
+    "Name": "SIM_EXT_SLD_Roof DA01",
+    "Guid": "f811e324-f485-42ef-815b-c186fdf4632f",
+    "SAMType": {
+      "_type": "SAM.Analytical.Construction,SAM.Analytical",
+      "Name": "SIM_EXT_SLD_Roof DA01",
+      "Guid": "6ebe9f3b-b20d-4583-a5db-3f17d8106016"
+    },
+    "PanelType": "Roof",
+    "PlanarBoundary3D": {
+      "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
+      "Guid": "25af63bf-978d-4903-9e3d-2722d01abce1",
+      "Plane": {
+        "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
+        "Origin": {
+          "_type": "SAM.Geometry.Spatial.Point3D,SAM.Geometry",
+          "X": 3.3333333333333335,
+          "Y": -18.666666666666668,
+          "Z": 0.0
+        },
+        "Normal": {
+          "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "AxisY": {
+          "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        }
+      },
+      "Edge2DLoop": {
+        "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
+        "Guid": "7440f8c2-f2e3-4184-89e4-86a468af74f4",
+        "BoundaryEdge2Ds": [
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "070d448e-ed13-4e27-965c-4a4c44dfb06c",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": 3.3333333333333335,
+                "Y": 4.6666666666666679
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": 0.0,
+                "Y": -7.0
+              }
+            }
+          },
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "02c11d41-2d0a-42f0-99a0-6d194d3714e3",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": 3.3333333333333335,
+                "Y": -2.3333333333333321
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": -10.0,
+                "Y": 0.0
+              }
+            }
+          },
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "4d7dcfb0-faa0-4591-9855-88fef72a487d",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": -6.6666666666666661,
+                "Y": -2.3333333333333321
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": 10.0,
+                "Y": 7.0
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Apertures": [
+      {
+        "_type": "SAM.Analytical.Aperture,SAM.Analytical",
+        "Guid": "85f08d1e-a9d0-421e-9718-182c03420cd5",
+        "SAMType": {
+          "_type": "SAM.Analytical.ApertureConstruction,SAM.Analytical",
+          "Name": "SIM_EXT_GLZ_SKY DF01",
+          "Guid": "6f6dc032-6fa5-43fa-bfef-de5937e95599",
+          "ApertureType": "Window"
+        },
+        "PlanarBoundary3D": {
+          "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
+          "Guid": "5e797e07-396c-4677-aca2-0a6453cd8f75",
+          "Plane": {
+            "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
+            "Origin": {
+              "_type": "SAM.Geometry.Spatial.Point3D,SAM.Geometry",
+              "X": 2.333333333333333,
+              "Y": -19.0,
+              "Z": 0.0
+            },
+            "Normal": {
+              "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 1.0
+            },
+            "AxisY": {
+              "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+              "X": 0.0,
+              "Y": 1.0,
+              "Z": 0.0
+            }
+          },
+          "Edge2DLoop": {
+            "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
+            "Guid": "562709d7-05e3-4aa2-9839-53488dd6e04d",
+            "BoundaryEdge2Ds": [
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "023bab6d-ef7c-4a71-b97a-d077155c4d4c",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": 1.333333333333333,
+                    "Y": 2.0
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": 0.0,
+                    "Y": -3.0
+                  }
+                }
+              },
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "31ff02e1-2684-4e2a-af5c-5c41fde1ebdc",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": 1.333333333333333,
+                    "Y": -1.0
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": -4.0,
+                    "Y": 0.0
+                  }
+                }
+              },
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "bf780c56-fd2c-4b44-9266-fb7ef3778f2b",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": -2.666666666666667,
+                    "Y": -1.0
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": 4.0,
+                    "Y": 3.0
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_type": "SAM.Analytical.Panel,SAM.Analytical",
+    "Name": "SIM_EXT_SLD_Roof DA01",
+    "Guid": "3c6d010b-239c-4980-a130-4a892d1a8c7d",
+    "SAMType": {
+      "_type": "SAM.Analytical.Construction,SAM.Analytical",
+      "Name": "SIM_EXT_SLD_Roof DA01",
+      "Guid": "6ebe9f3b-b20d-4583-a5db-3f17d8106016"
+    },
+    "PanelType": "Roof",
+    "PlanarBoundary3D": {
+      "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
+      "Guid": "ff1023d5-2a9b-493d-863b-5eadb2153195",
+      "Plane": {
+        "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
+        "Origin": {
+          "_type": "SAM.Geometry.Spatial.Point3D,SAM.Geometry",
+          "X": 16.433845632023488,
+          "Y": -18.666666666666668,
+          "Z": -0.5700335722094495
+        },
+        "Normal": {
+          "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+          "X": -0.34202014332566966,
+          "Y": 2.0935634178645814E-16,
+          "Z": 0.93969262078590809
+        },
+        "AxisY": {
+          "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+          "X": -6.1211699331729187E-16,
+          "Y": -1.0,
+          "Z": 0.0
+        }
+      },
+      "Edge2DLoop": {
+        "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
+        "Guid": "1ea713eb-7e11-4bca-afb5-66ceefaa19ce",
+        "BoundaryEdge2Ds": [
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "6878fef4-4008-4ead-9f30-36facf066622",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": -3.3333333333333384,
+                "Y": -4.6666666666666661
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": 4.4408920985006262E-15,
+                "Y": 6.9999999999999964
+              }
+            }
+          },
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "622c4348-572f-456f-a7e5-54ffc520d606",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": -3.3333333333333339,
+                "Y": 2.3333333333333304
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": 10.000000000000002,
+                "Y": -2.2204460492503131E-15
+              }
+            }
+          },
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "2668f121-eee9-4d8f-aa8b-91bf99f6a7ad",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": 6.6666666666666679,
+                "Y": 2.3333333333333282
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": -10.000000000000007,
+                "Y": -6.9999999999999947
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Apertures": [
+      {
+        "_type": "SAM.Analytical.Aperture,SAM.Analytical",
+        "Guid": "2d32aba2-bdc6-4f33-aa92-a5997ead917b",
+        "SAMType": {
+          "_type": "SAM.Analytical.ApertureConstruction,SAM.Analytical",
+          "Name": "SIM_EXT_GLZ_SKY DF01",
+          "Guid": "6f6dc032-6fa5-43fa-bfef-de5937e95599",
+          "ApertureType": "Window"
+        },
+        "PlanarBoundary3D": {
+          "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
+          "Guid": "4ef67001-792f-4d2d-87d3-64b06436e979",
+          "Plane": {
+            "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
+            "Origin": {
+              "_type": "SAM.Geometry.Spatial.Point3D,SAM.Geometry",
+              "X": 15.494153011237577,
+              "Y": -19.0,
+              "Z": -0.91205371553511982
+            },
+            "Normal": {
+              "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+              "X": -0.34202014332566966,
+              "Y": 2.0935634178645814E-16,
+              "Z": 0.93969262078590809
+            },
+            "AxisY": {
+              "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+              "X": -6.1211699331729187E-16,
+              "Y": -1.0,
+              "Z": 0.0
+            }
+          },
+          "Edge2DLoop": {
+            "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
+            "Guid": "3db8bd3c-f703-47be-a015-bd4db9e4725f",
+            "BoundaryEdge2Ds": [
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "2e166064-7d25-4cd0-bcb1-82b62436e7c5",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": -1.3333333333333346,
+                    "Y": -1.9999999999999993
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": 1.9984014443252818E-15,
+                    "Y": 3.0
+                  }
+                }
+              },
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "0fa99e1d-068d-4a46-a1c3-bba4d20e13b8",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": -1.3333333333333326,
+                    "Y": 1.0000000000000007
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": 4.0000000000000018,
+                    "Y": -2.2204460492503131E-15
+                  }
+                }
+              },
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "80a7f4fb-44ec-4846-bb4d-f6bce0eebd8f",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": 2.6666666666666687,
+                    "Y": 0.99999999999999845
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": -4.0000000000000036,
+                    "Y": -2.9999999999999978
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_type": "SAM.Analytical.Panel,SAM.Analytical",
+    "Name": "SIM_EXT_SLD_Roof DA01",
+    "Guid": "0585b3dd-9b9a-4812-b0cc-70493ae7d51b",
+    "SAMType": {
+      "_type": "SAM.Analytical.Construction,SAM.Analytical",
+      "Name": "SIM_EXT_SLD_Roof DA01",
+      "Guid": "6ebe9f3b-b20d-4583-a5db-3f17d8106016"
+    },
+    "PanelType": "Roof",
+    "PlanarBoundary3D": {
+      "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
+      "Guid": "c57d07f1-2a61-45c5-8738-b49c16853683",
+      "Plane": {
+        "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
+        "Origin": {
+          "_type": "SAM.Geometry.Spatial.Point3D,SAM.Geometry",
+          "X": 31.723259261468371,
+          "Y": -18.666666666666668,
+          "Z": -1.0713126828108994
+        },
+        "Normal": {
+          "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+          "X": -0.64278760968653947,
+          "Y": 2.6645352591003756E-16,
+          "Z": 0.7660444431189779
+        },
+        "AxisY": {
+          "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+          "X": -4.1452809900921358E-16,
+          "Y": -1.0,
+          "Z": 0.0
+        }
+      },
+      "Edge2DLoop": {
+        "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
+        "Guid": "c7d64ff3-24d2-45dd-866e-03df376b07b1",
+        "BoundaryEdge2Ds": [
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "5894949c-830e-4979-b5a0-19168aac878e",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": -3.3333333333333353,
+                "Y": -4.6666666666666687
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": 4.4408920985006262E-16,
+                "Y": 7.0000000000000018
+              }
+            }
+          },
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "4109afe2-0f5a-4879-8dfc-1796e14d5a10",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": -3.3333333333333348,
+                "Y": 2.333333333333333
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": 10.0,
+                "Y": -3.1086244689504383E-15
+              }
+            }
+          },
+          {
+            "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+            "Guid": "53f09247-d094-4905-aee6-f9a37eb962ca",
+            "Curve2D": {
+              "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+              "Origin": {
+                "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                "X": 6.6666666666666643,
+                "Y": 2.33333333333333
+              },
+              "Vector": {
+                "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                "X": -10.0,
+                "Y": -6.9999999999999982
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Apertures": [
+      {
+        "_type": "SAM.Analytical.Aperture,SAM.Analytical",
+        "Guid": "39a8eea4-cf3b-4a8d-81d1-ea62a26ceecf",
+        "SAMType": {
+          "_type": "SAM.Analytical.ApertureConstruction,SAM.Analytical",
+          "Name": "SIM_EXT_GLZ_SKY DF01",
+          "Guid": "6f6dc032-6fa5-43fa-bfef-de5937e95599",
+          "ApertureType": "Window"
+        },
+        "PlanarBoundary3D": {
+          "_type": "SAM.Analytical.PlanarBoundary3D,SAM.Analytical",
+          "Guid": "77e607a9-b255-494f-aaa3-1b81b2a35346",
+          "Plane": {
+            "_type": "SAM.Geometry.Spatial.Plane,SAM.Geometry",
+            "Origin": {
+              "_type": "SAM.Geometry.Spatial.Point3D,SAM.Geometry",
+              "X": 30.957214818349392,
+              "Y": -19.0,
+              "Z": -1.7141002924974389
+            },
+            "Normal": {
+              "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+              "X": -0.64278760968653947,
+              "Y": 2.6645352591003756E-16,
+              "Z": 0.7660444431189779
+            },
+            "AxisY": {
+              "_type": "SAM.Geometry.Spatial.Vector3D,SAM.Geometry",
+              "X": -4.1452809900921358E-16,
+              "Y": -1.0,
+              "Z": 0.0
+            }
+          },
+          "Edge2DLoop": {
+            "_type": "SAM.Analytical.BoundaryEdge2DLoop,SAM.Analytical",
+            "Guid": "25664196-9fb6-4827-b981-ca44deff856f",
+            "BoundaryEdge2Ds": [
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "217b53bc-5b15-4198-a1bc-4e1160a18870",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": -1.3333333333333348,
+                    "Y": -1.999999999999996
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": 5.3290705182007514E-15,
+                    "Y": 2.9999999999999964
+                  }
+                }
+              },
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "53372af4-8bc4-4b07-8e13-e1f3d88cdf80",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": -1.3333333333333295,
+                    "Y": 1.0000000000000004
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": 3.9999999999999969,
+                    "Y": -1.3322676295501878E-15
+                  }
+                }
+              },
+              {
+                "_type": "SAM.Analytical.BoundaryEdge2D,SAM.Analytical",
+                "Guid": "79b06cfc-b4ee-471e-9543-49f438b5f744",
+                "Curve2D": {
+                  "_type": "SAM.Geometry.Planar.Segment2D,SAM.Geometry",
+                  "Origin": {
+                    "_type": "SAM.Geometry.Planar.Point2D,SAM.Geometry",
+                    "X": 2.6666666666666674,
+                    "Y": 0.99999999999999911
+                  },
+                  "Vector": {
+                    "_type": "SAM.Geometry.Planar.Vector2D,SAM.Geometry",
+                    "X": -4.0000000000000018,
+                    "Y": -2.9999999999999951
                   }
                 }
               }
