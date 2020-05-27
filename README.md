@@ -3,24 +3,46 @@
 <div><input type=button class = "btn btn-secondary btn-sm" onclick=window.location.href="https://github.com/hoarelea/sam-viewer/"
 value="You are now in a GitHub web page view - Click this button to view this read me file as source code" ></div>
 
-# Online Sustainable Analytical Model (SAM) JSON file interactive 3D viewer
+# [Online Sustainable Analytical Model (SAM) JSON file interactive 3D viewer  ]( ./index.html "Hi there! Click me to reload this page")
 
-## Canonical links:
 
-- https://hoarelea.github.io/sam-viewer/sam-viewer/
-- https://hoarelea-sam-viewer.glitch.me/
+<div style=height:80ch;overflow:hidden;resize:both;width:100%; >
+<iframe src=https://hoarelea.github.io/sam-viewer/sam-viewer/ width=100% height=100%>Iframes are not viewable in GitHub source code view</iframe></div>
 
-previous version
+_SAM Viewer - Touch me! Resize me!_
 
-* - https://hoarelea-sam-viewer.glitch.me/sam-viewer/v-2020-05-24/sam-viewer.html
+## Canonical links
+
+We build new versions frequently. Every version are dated and always available. The following links wil always take you to the the latest or "canonical" version. So use these links for your bookmarks.
+
+GitHub - supports a community where more than 50 million* people learn, share, and work together to build software
+
+* https://hoarelea.github.io/sam-viewer/sam-viewer/
+* https://github.com/HoareLea/sam-viewer/issues
+
+Glitch - see the three things here: https://glitch.com/about
+
+* https://hoarelea-sam-viewer.glitch.me/
+* https://glitch.com/~hoarelea-sam-viewer
+
+Link to first version of the viewer:
+
+[SAM Viewer v-2020-05-20]( https://hoarelea.github.io/sam-viewer/sam-viewer/v-2020-05-20/sam-viewer.html)
 
 See also
 
 - https://github.com/HoareLea/SAM
 
+## Concept
+
+
+Online <a href="https://hoarelea.com/" target="_blank">Hoare Lea</a> Sustainable Analytical Model (SAM) JSON file interactive 3D viewer in your browser designed to be forked, hacked and remixed using the WebGL and the 
+<a href="https://threejs.org" target="_blank">Three.js</a> JavaScript library
+
 ## To Do / Wish List
 
-- 2020-05-24 ~ Theo ~ Bi-directional link between 3D model and JSON Tree View
+- 2020-05-26 ~ Theo ~ SAM roadmap with mission and vision
+- 2020-05-26 ~ Theo ~ HL coding buddy
 - 2020-05-21/24 ~ Theo ~ Fix Apertures
 
 ## Issues
@@ -60,11 +82,17 @@ See also
 If you like this effort
 
 - Please give this repository a star
-- sign up to receive notices of issues
+- Sign up to receive notices of issues
 
 ## Change Log
 
 See also change logs in readme files in individual folders
+
+### 2020-05-26 ~ Theo
+
+Done or dealt with for the most part
+
+- 2020-05-24 ~ Theo ~ Bi-directional link between 3D model and JSON Tree View
 
 ### 2020-05-24 ~ Theo
 
