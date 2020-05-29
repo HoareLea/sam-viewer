@@ -1,4 +1,4 @@
-const version = "2020-05-26";
+const version = "2020-05-29";
 
 const urlJsonDefault =
   "https://cdn.jsdelivr.net/gh/hoarelea/sam-viewer@master/sam-sample-files/RoofFloorWall.JSON";
