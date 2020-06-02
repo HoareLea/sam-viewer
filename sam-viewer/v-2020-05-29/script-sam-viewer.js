@@ -1,7 +1,7 @@
 const version = "2020-05-29";
 
 const urlJsonDefault =
-  "https://cdn.jsdelivr.net/gh/hoarelea/sam-viewer@master/sam-sample-files/ThreeLevelsRotatedBoxes.JSON";
+  "https://cdn.jsdelivr.net/gh/hoarelea/sam-viewer@master/sam-sample-files/RoofFloorWall.JSON";
 
 aGlitchHref = "https://glitch.com/~hoarelea-sam-viewer";
 
@@ -13,7 +13,7 @@ designed to be forked, hacked and remixed using the WebGL and the
 <a href="https://threejs.org" target="_blank">Three.js</a> JavaScript library
 `;
 
-//declare SAM aaa
+//declare SAM
 const SAM = {
   json: {},
   group: new THREE.Object3D()
@@ -62,12 +62,12 @@ function init() {
 
   FRJ.init();
 
-  HRT.initHeart();
+  //HRT.initHeart();
 }
 
 SAM.onLoadSam = function(response) {
   panelsJson = response;
-  console.log("panelsJson", panelsJson);
+  //console.log("panelsJson", panelsJson);
 
   selPanel.innerHTML = new Array(panelsJson.length)
     .fill()
@@ -101,60 +101,72 @@ SAM.setSceneNew = function(shapes = []) {
   RAY.addMouseMove();
 };
 
+
+//Main steps to create Panel
 SAM.getPanel = function(index) {
   const panel = panelsJson[index];
   //console.log( "panel", panel );
   const items = [];
-  const holes = [];
+  //const holes = [];
   const v2 = (x, y) => new THREE.Vector2(x, y);
+  console.log("panel", panel);
 
   //aperture
   if (panel.Apertures) {
     //console.log( "panel.Apertures", panel.Apertures );
     for (let aperture of panel.Apertures) {
-      //console.log( "aperture", aperture );
+      console.log( "aperture", aperture );
+      //let vertices = [];
 
-      let vertices = [];
-
-      SAM.getEdgeVertices(aperture.PlanarBoundary3D, vertices);
+      //SAM.getEdgeVertices(aperture.PlanarBoundary3D, vertices);
       //console.log("aperture vertices", vertices);
 
-      const hole = new THREE.Path().setFromPoints(vertices);
-      
-      const color1 = SAM.colors[aperture.SAMType.ApertureType];
-      let shape1 = SAM.getShape1(vertices, color1);
-      
-      const pN1 = aperture.PlanarBoundary3D.Plane.Normal;
-      const normal1 = new THREE.Vector3(pN1.X, pN1.Y, pN1.Z);
-      
-      
-  const pO1 = aperture.PlanarBoundary3D.Plane.Origin;
-  const origin1 = new THREE.Vector3(pO1.X + (pN1.X * 0.1), pO1.Y + (pN1.Y * 0.1), pO1.Z + (pN1.Z * 0.1));      
-      shape1.position.copy(origin1);
-      
-const pY1 = aperture.PlanarBoundary3D.Plane.AxisY;
-  const axisY1 = new THREE.Vector3(pY1.X, pY1.Y, pY1.Z);
-      shape1.up.copy(axisY1);
-      
-      
+      //const hole = new THREE.Path().setFromPoints(vertices);
+      //const color1 = SAM.colors[aperture.SAMType.ApertureType];
 
-      shape1.lookAt(origin1.clone().add(normal1));
-      items.push(shape1);
+      let mesh_Aperture = SAM.GetMeshFromAperture(aperture);
+      console.log("panel", panel);
+
+      //let shape1 = SAM.getShape1(vertices, color1);
+
+      //const pN1 = aperture.PlanarBoundary3D.Plane.Normal;
+      //const normal1 = new THREE.Vector3(pN1.X, pN1.Y, pN1.Z);
+
+      //const normal1 = SAM.GetNormal(aperture.PlanarBoundary3D);
+      //const origin1 = SAM.GetOrigin(aperture.PlanarBoundary3D);
+      //console.log( "Origin", origin1  );
+
+      //const pO1 = aperture.PlanarBoundary3D.Plane.Origin;
+      //const origin1 = new THREE.Vector3(pO1.X + (pN1.X * 0.1), pO1.Y + (pN1.Y * 0.1), pO1.Z + (pN1.Z * 0.1));
+      //shape1.position.copy(origin1);
+
+      //const pY1 = aperture.PlanarBoundary3D.Plane.AxisY;
+      //const axisY1 = new THREE.Vector3(pY1.X, pY1.Y, pY1.Z);
+      //shape1.up.copy(axisY1);
+      //shape1.lookAt(origin1.clone().add(normal1));
+      
+      //push Aperture MD 2020-06.01
+      items.push(mesh_Aperture);
+      console.log("Mesh Aperture", mesh_Aperture );
 
       //holes does  not work right now
-      holes.push(hole);
+      //holes.push(hole);
     }
   }
+  
+    var origin = SAM.GetOrigin(panel.PlanarBoundary3D);
+    var axisY = SAM.GetAxisY(panel.PlanarBoundary3D);
+    var normal = SAM.GetNormal(panel.PlanarBoundary3D);
+    console.log( "Panel Normal", normal);
+  //console.log("SAM.test", panel);
 
-  console.log("SAM.test", panel);
-
-  let b3d = panel.PlanarBoundary3D;
+  //let b3d = panel.PlanarBoundary3D;
   //console.log( "\n\nBoundary", b3d  );
 
-  const pO = b3d.Plane.Origin;
-  console.log("plane.origin", b3d.Plane.Origin);
+  //const pO = b3d.Plane.Origin;
+  //console.log("plane.origin", b3d.Plane.Origin);
 
-  const origin = new THREE.Vector3(pO.X, pO.Y, pO.Z);
+  //const origin = new THREE.Vector3(pO.X, pO.Y, pO.Z);
   //console.log( "origin", origin );
 
   const mesh = THR.addMesh(0.3);
@@ -162,15 +174,15 @@ const pY1 = aperture.PlanarBoundary3D.Plane.AxisY;
   mesh.position.copy(origin);
   //console.log( "mesh", mesh );
 
-  const pN = b3d.Plane.Normal;
-  const normal = new THREE.Vector3(pN.X, pN.Y, pN.Z);
+  //const pN = b3d.Plane.Normal;
+  //const normal = new THREE.Vector3(pN.X, pN.Y, pN.Z);
   //console.log("normal", normal);
 
-  const pY = b3d.Plane.AxisY;
-  const axisY = new THREE.Vector3(pY.X, pY.Y, pY.Z);
+  //const pY = b3d.Plane.AxisY;
+  //const axisY = new THREE.Vector3(pY.X, pY.Y, pY.Z);
 
-  //nraml on surface
-  let line = SAM.getLine(
+  //normal on surface
+  /*let line = SAM.getLine(
     [origin, origin.clone().add(normal)],
     "blue",
     origin,
@@ -184,43 +196,57 @@ const pY1 = aperture.PlanarBoundary3D.Plane.AxisY;
     origin,
     normal
   );
+  */
 
-  //create arrow for normal
+  //---------------------------------------------------
+  //Paenl create blue arrow for normal MD 2020-06-01
+  //var arrowHelper = new THREE.ArrowHelper( dir, origin, length, hex );
   let arrowHelper = new THREE.ArrowHelper(normal, origin, 1, 0x0000ff);
   items.push(arrowHelper);
 
+  //Panel create green arrow for axisX MD 2020-06-01
   arrowHelper = new THREE.ArrowHelper(axisY, origin, 1, 0x00ff00);
   items.push(arrowHelper);
-  //
+  //--------------------------------------------------
 
-  let vertices = []; // get this to Array.map
+  //let vertices = []; // get this to Array.map
 
   //for Panels
-  SAM.getEdgeVertices(b3d, vertices);
-  console.log("PANEL vertices", vertices);
+  //SAM.getEdgeVertices(b3d, vertices);
+  //console.log("PANEL vertices", vertices);
 
-  const color = SAM.colors[panel.PanelType];
+  //const color = SAM.colors[panel.PanelType];
   //console.log( "color", color, panel.PanelType );
 
-  let shape = SAM.getShape1(vertices, color);
-  shape.position.copy(origin);
-  shape.up.copy(axisY);
-  shape.lookAt(origin.clone().add(normal));
-  shape.userData.index = index;
+  //-------------DELETE
+  //let shape = SAM.getShape1(vertices, color);
+  //shape.position.copy(origin);
+  //shape.up.copy(axisY);
+  //shape.lookAt(origin.clone().add(normal));
+  //shape.userData.index = index;
+  //-------------
 
   //shape.userData.panelsJson = panel;
 
-  items.push(shape);
+  // when using let can not be accessed from outside the block {}
+  //SAM.GetHolesFromAperture;
+  let shape_Panel = SAM.GetMeshFromPanel(panel);
+  shape_Panel.userData.index = index;
+  //Push Panels
+  //console.log("shape", shape);
+  items.push(shape_Panel);
 
+  //-------------DELETE
   //let shape1 = SAM.getShape(holes, 0x00ff00);
   //console.log("holes", holes);
   //items.push(shape1);
-
-  //console.log("items", items);
+  //-------------
 
   return items;
+  //console.log("items", items);
 };
 
+/* Old method to show scene global axis 
 SAM.getLine = function(vertices, color = 0x000000) {
   const geometry = new THREE.Geometry();
   geometry.vertices = vertices;
@@ -230,7 +256,9 @@ SAM.getLine = function(vertices, color = 0x000000) {
 
   return line;
 };
+*/
 
+/* Old method
 //Vertices for aperture
 SAM.getEdgeVertices = function(boundary, vertices) {
   //const v2 = (x, y) => new THREE.Vector2(x, y);
@@ -258,59 +286,264 @@ SAM.getEdgeVertices = function(boundary, vertices) {
     vertices.push(cVV);
   }
 };
-///////////////////
+*/
 
-//New Function Get Pint3d from Point2D for Panels and aperture 29.05.2020
+///--------------------------------------------------------------///
 
-/* started writingn new method
-SAM.getPoint3Ds = function(Boundary3D, vertices) {
-  
+//Gets Holes from SAM Aperture MD 2020-06-01
+//SAM.GetHolesFromAperture = function(aperture) {
+//  if (aperture == null || aperture.PlanarBoundary3D == null) return null;
+//    let points = SAM.GetPoint2Ds(planarBoundary3D);
+//    const hole = new THREE.Path(points);
+//  return hole;
+//};
+
+//Gets Mesh from SAM Aperture
+SAM.GetMeshFromAperture = function(aperture) {
+  if (aperture == null || aperture.PlanarBoundary3D == null) return null;
+
+  const color = SAM.colors[aperture.SAMType.ApertureType];
+
+  return SAM.GetMeshFromPlanarBoundary3D(
+    aperture.PlanarBoundary3D,
+    null,
+    color
+  );
 };
 
-SAM.ConvertTo3D = function(point2D, normal, origin, axisY)
-{
+//Gest Mesh from SAM Panel
+SAM.GetMeshFromPanel = function(panel) {
+  if (panel == null || panel.PlanarBoundary3D == null) return null;
+
+  var color = SAM.colors[panel.PanelType];
+
+  var holes = [];
+  if (panel.Apertures && panel.PlanarBoundary3D) {
+    var planarBoundary3D = panel.PlanarBoundary3D;
+
+    var origin_panel = SAM.GetOrigin(planarBoundary3D);
+    var axisY_panel = SAM.GetAxisY(planarBoundary3D);
+    var normal_panel = SAM.GetNormal(planarBoundary3D);
+
+    for (let aperture of panel.Apertures) {
+      //should be aperture.PlanarBoundary3D== null??
+      if (aperture == null || aperture.PlanarBoundary3D) continue;
+
+      planarBoundary3D = aperture.PlanarBoundary3D;
+
+      var origin_aperture = SAM.GetOrigin(planarBoundary3D);
+      var axisY_aperture = SAM.GetAxisY(planarBoundary3D);
+      var normal_aperture = SAM.GetNormal(planarBoundary3D);
+
+      var points_aperture = SAM.GetPoint2Ds(planarBoundary3D);
+      var points_panel = [];
+      for (let point_aperture of points_aperture) {
+        
+        var point3D = SAM.ConvertTo3D(point_aperture, normal_aperture, origin_aperture, axisY_aperture);
+        var point2D = SAM.ConvertTo2D(point3D, normal_panel, origin_panel, axisY_panel);
+        points_panel.push(point2D);
+        
+      }
+      console.log("Points", points_panel);
+      const hole = new THREE.Path().setFromPoints(points_panel);
+      
+      holes.push(hole);
+      //console.log("hole", hole);
+    }
+  }
+
+  return SAM.GetMeshFromPlanarBoundary3D(panel.PlanarBoundary3D, holes, color);
+};
+
+//Gets Mesh from SAM PlanarBoundary3D
+SAM.GetMeshFromPlanarBoundary3D = function(planarBoundary3D, holes, color) {
+  if (planarBoundary3D == null) return null;
+
+  let points = SAM.GetPoint2Ds(planarBoundary3D);
+
+  const shape = new THREE.Shape(points);
+
+  if (holes != null && holes.length != 0) shape.holes = holes;
+
+  const shapeGeometry = new THREE.ShapeGeometry(shape);
+
+  const material = new THREE.MeshPhongMaterial({
+    color: color,
+    opacity: 0.85,
+    side: 2,
+    transparent: true
+  });
+
+  const mesh = new THREE.Mesh(shapeGeometry, material);
+  mesh.receiveShadow = true;
+  mesh.castShadow = true;
+
+  //control display
+  const origin = SAM.GetOrigin(planarBoundary3D);
+  const axisY = SAM.GetAxisY(planarBoundary3D);
+  const normal = SAM.GetNormal(planarBoundary3D);
+  const axisX = SAM.GetAxisX(planarBoundary3D);
+  //console.log( "origin", origin );
+  //console.log( "axisY", axisY );
+  //console.log( "axisX", axisX );
+
+  mesh.position.copy(origin);
+  mesh.up.copy(axisY);
+  //mesh.traverse();
+  mesh.lookAt(origin.clone().add(normal));
+  //Added fix
+  mesh.rotateX(-Math.PI);
+  mesh.rotateZ(Math.PI);
+
+  return mesh;
+};
+
+//Gets 2D Points from SAM PlanarBoundary3D (as THREE.Vector2)
+SAM.GetPoint2Ds = function(planarBoundary3D) {
+  if (
+    planarBoundary3D == null ||
+    planarBoundary3D.Edge2DLoop == null ||
+    planarBoundary3D.Edge2DLoop.BoundaryEdge2Ds == null
+  )
+    return null;
+
+  const result = [];
+
+  for (let edge of planarBoundary3D.Edge2DLoop.BoundaryEdge2Ds) {
+    if (
+      edge == null ||
+      edge.Curve2D == null ||
+      edge.Curve2D.Origin == null ||
+      edge.Curve2D.Vector == null
+    )
+      continue;
+
+    const origin = edge.Curve2D.Origin;
+    const vector = edge.Curve2D.Vector;
+
+    const point = new THREE.Vector2(origin.X + vector.X, origin.Y + vector.Y);
+
+    result.push(point);
+  }
+
+  return result;
+};
+
+//Gets normal for SAM PlanarBoundary3D (as THREE.Vector3)
+SAM.GetNormal = function(planarBoundary3D) {
+  if (planarBoundary3D == null || planarBoundary3D.Plane == null) return null;
+
+  const normal = planarBoundary3D.Plane.Normal;
+  if (normal == null) return null;
+
+  return SAM.Vector3DToVector3(normal);
+};
+
+//Gets origin for SAM PlanarBoundary3D (as THREE.Vector3)
+SAM.GetOrigin = function(planarBoundary3D) {
+  if (planarBoundary3D == null || planarBoundary3D.Plane == null) return null;
+
+  const origin = planarBoundary3D.Plane.Origin;
+  if (origin == null) return null;
+
+  return SAM.Vector3DToVector3(origin);
+};
+
+//Gets axis Y for SAM PlanarBoundary3D (as THREE.Vector3)
+SAM.GetAxisY = function(planarBoundary3D) {
+  if (planarBoundary3D == null || planarBoundary3D.Plane == null) return null;
+
+  const axisY = planarBoundary3D.Plane.AxisY;
+  if (axisY == null) return null;
+
+  return SAM.Vector3DToVector3(axisY);
+};
+
+//Gets axis Y for SAM PlanarBoundary3D (as THREE.Vector3)
+SAM.GetAxisX = function(planarBoundary3D) {
+  if (planarBoundary3D == null || planarBoundary3D.Plane == null) return null;
+
+  const axisY = SAM.GetAxisY(planarBoundary3D);
+  const normal = SAM.GetNormal(planarBoundary3D);
+
+  return normal.cross(axisY);
+};
+
+//Converts Point 2D (THREE.Vector2) to Point 3D (THREE.Vector3) by given plane represented by normal (THREE.Vector3), origin (THREE.Vector3) and axisY (THREE.Vector3)
+SAM.ConvertTo3D = function(point2D, normal, origin, axisY) {
+  if (point2D == null || normal == null || origin == null || axisY == null)
+    return null;
+
+  const normal_Temp = normal.clone();
+  normal_Temp.normalize();
+
+  const axisY_Temp = axisY.clone();
+  axisY_Temp.normalize();
+
+  const axisX = normal_Temp.cross(axisY_Temp);
+
+  const u = new THREE.Vector3(
+    axisY_Temp.X * point2D.Y,
+    axisY_Temp.Y * point2D.Y,
+    axisY_Temp.Z * point2D.Y
+  );
+  const v = new THREE.Vector3(
+    axisX.X * point2D.X,
+    axisX.Y * point2D.X,
+    axisX.Z * point2D.X
+  );
+
+  return new THREE.Vector3(
+    origin.X + u.X + v.X,
+    origin.Y + u.Y + v.Y,
+    origin.Z + u.Z + v.Z
+  );
+};
+
+//Converts Point 3D (THREE.Vector3) to Point 2D (THREE.Vector2) by given plane represented by normal (THREE.Vector3), origin (THREE.Vector3) and axisY (THREE.Vector3)
+SAM.ConvertTo2D = function(point3D, normal, origin, axisY) {
   if (point3D == null || normal == null || origin == null || axisY == null)
     return null;
-  
-  //const point = new THREE.Vector3(point3D.X, point3D.Y, point3D.Z);
-  const normal_Temp = new THREE.Vector3(normal.X, normal.Y, normal.Z);
-  const axisX = new THREE.Vector3(((axisY.Y * normal.Z) - (axisY.Z * normal.Y), (axisY.Z * normal.X) - (axisY.X * normal.Z), (axisY.X * normal.Y) - (axisY.Y * normal.X)));
-  
-  const u = new THREE.Vector3(axisX_Temp.X * point2D.X, axisX_Temp.Y * point2D.X, axisX_Temp.Z * point2D.X);
-  
+
+  const normal_Temp = normal.clone();
+  normal_Temp.normalize();
+
+  const axisY_Temp = axisY.clone();
+  axisY_Temp.normalize();
+
+  const axisX = normal_Temp.cross(axisY_Temp);
+
+  const vector = new THREE.Vector3(
+    point3D.X - origin.X,
+    point3D.Y - origin.Y,
+    point3D.Z - origin.Z
+  );
+
+  return new THREE.Vector2(axisX.dot(vector), axisY_Temp.dot(vector));
 };
 
-*/
+//Converts SAM Point2D to Vector3 (THREE.Vector3)
+SAM.Point2DToVector2 = function(point2D) {
+  if (point2D == null) return null;
 
-/* C# tp JS
-    public static partial class Query
-    {
-		public static Point3D Convert(this Point3D origin, Vector3D normal, Planar.Point2D point2D, Vector3D axisX = null)
-		{
-			if (normal == null || origin == null || point2D == null)
-				return null;
+  return new THREE.Vector2(point2D.X, point2D.Y);
+};
 
-			Vector3D normal_Temp = normal.Unit;
-			Vector3D axisX_Temp = axisX;
+//Converts SAM Vector2D to Vector2 (THREE.Vector2)
+SAM.Vector2DToVector2 = function(vector2D) {
+  if (vector2D == null) return null;
 
-			if (axisX_Temp == null)
-			{
-				if (normal_Temp.X == 0 && normal_Temp.Y == 0)
-					normal_Temp = new Vector3D(1, 0, 0);
-				else
-					normal_Temp = new Vector3D(normal_Temp.Y, -normal_Temp.X, 0).Unit;
-			}
+  return new THREE.Vector2(vector2D.X, vector2D.Y);
+};
 
-			Vector3D axisY = new Vector3D((normal_Temp.Y * axisX_Temp.Z) - (normal_Temp.Z * axisX_Temp.Y), (normal_Temp.Z * axisX_Temp.X) - (normal_Temp.X * axisX_Temp.Z), (normal_Temp.X * axisX_Temp.Y) - (normal_Temp.Y * axisX_Temp.X));
+//Converts SAM Vector3D to Vector3 (THREE.Vector3)
+SAM.Vector3DToVector3 = function(vector3D) {
+  if (vector3D == null) return null;
 
-			Vector3D u = new Vector3D(axisX_Temp.X * point2D.X, axisX_Temp.Y * point2D.X, axisX_Temp.Z * point2D.X);
-			Vector3D v = new Vector3D(axisY.X * point2D.Y, axisY.Y * point2D.Y, axisY.Z * point2D.Y);
+  return new THREE.Vector3(vector3D.X, vector3D.Y, vector3D.Z);
+};
 
-			return new Point3D(origin.X + u.X + v.X, origin.Y + u.Y + v.Y, origin.Z + u.Z + v.Z);
-		}
-    }
-
-*/
+///--------------------------------------------------------------///
 
 SAM.getShape = function(vertices, holes, color) {
   const shapeGeo = new THREE.Shape(vertices);
