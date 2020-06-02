@@ -56,13 +56,18 @@ function init() {
 
 	requestFile(urlJsonDefault, SAM.onLoadSam);
 
-	FRJ.init();
+	//FRJ.init();
+
+	JTV.init();
+	JTH.init();
+	JTF.init();
 
 	HRT.initHeart();
 }
 
 SAM.onLoadSam = function (response) {
 	panelsJson = response;
+
 	console.log("panelsJson", panelsJson);
 
 	selPanel.innerHTML = new Array(panelsJson.length)
@@ -73,9 +78,10 @@ SAM.onLoadSam = function (response) {
 
 	SAM.setSceneNew(panels);
 
-	JTV.init();
-	JTH.init();
-	JTF.init();
+	JTV.json = panelsJson
+	JTVdivJsonTree.innerHTML = JTV.parseJson( JTV.root, FRJ.json, 0 );
+
+
 };
 
 SAM.setSceneNew = function (shapes = []) {
