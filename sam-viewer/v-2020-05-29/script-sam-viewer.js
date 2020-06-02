@@ -73,6 +73,7 @@ SAM.onLoadSam = function(response) {
     .fill()
     .map((panel, i) => `<option>${i} ${panelsJson[i].Name}</option>`);
 
+  console.clear();
   //take every object from item in array
   panels = panelsJson.flatMap((panel, index) => SAM.getPanel(index));
 
@@ -109,13 +110,13 @@ SAM.getPanel = function(index) {
   const items = [];
   //const holes = [];
   const v2 = (x, y) => new THREE.Vector2(x, y);
-  console.log("panel", panel);
+  //console.log("panel", panel);
 
   //aperture
   if (panel.Apertures) {
     //console.log( "panel.Apertures", panel.Apertures );
     for (let aperture of panel.Apertures) {
-      console.log( "aperture", aperture );
+      //console.log( "aperture", aperture );
       //let vertices = [];
 
       //SAM.getEdgeVertices(aperture.PlanarBoundary3D, vertices);
@@ -125,7 +126,7 @@ SAM.getPanel = function(index) {
       //const color1 = SAM.colors[aperture.SAMType.ApertureType];
 
       let mesh_Aperture = SAM.GetMeshFromAperture(aperture);
-      console.log("panel", panel);
+      //console.log("panel", panel);
 
       //let shape1 = SAM.getShape1(vertices, color1);
 
@@ -147,7 +148,7 @@ SAM.getPanel = function(index) {
       
       //push Aperture MD 2020-06.01
       items.push(mesh_Aperture);
-      console.log("Mesh Aperture", mesh_Aperture );
+      //console.log("Mesh Aperture", mesh_Aperture );
 
       //holes does  not work right now
       //holes.push(hole);
@@ -157,7 +158,7 @@ SAM.getPanel = function(index) {
     var origin = SAM.GetOrigin(panel.PlanarBoundary3D);
     var axisY = SAM.GetAxisY(panel.PlanarBoundary3D);
     var normal = SAM.GetNormal(panel.PlanarBoundary3D);
-    console.log( "Panel Normal", normal);
+    //console.log( "Panel Normal", normal);
   //console.log("SAM.test", panel);
 
   //let b3d = panel.PlanarBoundary3D;
@@ -327,7 +328,8 @@ SAM.GetMeshFromPanel = function(panel) {
 
     for (let aperture of panel.Apertures) {
       //should be aperture.PlanarBoundary3D== null??
-      if (aperture == null || aperture.PlanarBoundary3D) continue;
+      if (aperture == null || aperture.PlanarBoundary3D == null) 
+        continue;
 
       planarBoundary3D = aperture.PlanarBoundary3D;
 
@@ -339,12 +341,15 @@ SAM.GetMeshFromPanel = function(panel) {
       var points_panel = [];
       for (let point_aperture of points_aperture) {
         
+        //console.log("Point2D Aperture", point_aperture);
         var point3D = SAM.ConvertTo3D(point_aperture, normal_aperture, origin_aperture, axisY_aperture);
+        //console.log("Point3D", point3D);
         var point2D = SAM.ConvertTo2D(point3D, normal_panel, origin_panel, axisY_panel);
+        //console.log("Point2D", point2D);
         points_panel.push(point2D);
         
       }
-      console.log("Points", points_panel);
+      //console.log("PointsA", points_panel);
       const hole = new THREE.Path().setFromPoints(points_panel);
       
       holes.push(hole);
@@ -474,29 +479,40 @@ SAM.ConvertTo3D = function(point2D, normal, origin, axisY) {
   if (point2D == null || normal == null || origin == null || axisY == null)
     return null;
 
-  const normal_Temp = normal.clone();
+  let normal_Temp = normal.clone();
   normal_Temp.normalize();
-
-  const axisY_Temp = axisY.clone();
+  
+  let axisY_Temp = axisY.clone();
   axisY_Temp.normalize();
 
-  const axisX = normal_Temp.cross(axisY_Temp);
+  let axisX = normal_Temp.cross(axisY_Temp);
+  
+  console.log("point2D", point2D);
+  console.log("normal", normal_Temp);
+  console.log("axisY", axisY_Temp);
+  console.log("axisX", axisX);
+  console.log("axisY_Temp.X * point2D.Y", axisY_Temp.y * point2D.y);
 
-  const u = new THREE.Vector3(
-    axisY_Temp.X * point2D.Y,
-    axisY_Temp.Y * point2D.Y,
-    axisY_Temp.Z * point2D.Y
+  let u = new THREE.Vector3(
+    axisY_Temp.x * point2D.y,
+    axisY_Temp.y * point2D.y,
+    axisY_Temp.z * point2D.y
   );
-  const v = new THREE.Vector3(
-    axisX.X * point2D.X,
-    axisX.Y * point2D.X,
-    axisX.Z * point2D.X
+  
+    console.log("u", u);
+  
+  let v = new THREE.Vector3(
+    axisX.x * point2D.x,
+    axisX.y * point2D.x,
+    axisX.z * point2D.x
   );
+  
+  console.log("v", v);
 
   return new THREE.Vector3(
-    origin.X + u.X + v.X,
-    origin.Y + u.Y + v.Y,
-    origin.Z + u.Z + v.Z
+    origin.x + u.x + v.x,
+    origin.y + u.y + v.y,
+    origin.z + u.z + v.z
   );
 };
 
@@ -514,9 +530,9 @@ SAM.ConvertTo2D = function(point3D, normal, origin, axisY) {
   const axisX = normal_Temp.cross(axisY_Temp);
 
   const vector = new THREE.Vector3(
-    point3D.X - origin.X,
-    point3D.Y - origin.Y,
-    point3D.Z - origin.Z
+    point3D.x - origin.x,
+    point3D.y - origin.y,
+    point3D.z - origin.z
   );
 
   return new THREE.Vector2(axisX.dot(vector), axisY_Temp.dot(vector));
