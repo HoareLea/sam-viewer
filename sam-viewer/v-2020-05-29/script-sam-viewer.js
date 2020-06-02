@@ -73,6 +73,7 @@ SAM.onLoadSam = function(response) {
     .fill()
     .map((panel, i) => `<option>${i} ${panelsJson[i].Name}</option>`);
 
+  //clear debugging console
   console.clear();
   //take every object from item in array
   panels = panelsJson.flatMap((panel, index) => SAM.getPanel(index));
@@ -158,6 +159,7 @@ SAM.getPanel = function(index) {
     var origin = SAM.GetOrigin(panel.PlanarBoundary3D);
     var axisY = SAM.GetAxisY(panel.PlanarBoundary3D);
     var normal = SAM.GetNormal(panel.PlanarBoundary3D);
+    var centroid = SAM.GetCentroid(panel.PlanarBoundary3D);
     //console.log( "Panel Normal", normal);
   //console.log("SAM.test", panel);
 
@@ -170,9 +172,13 @@ SAM.getPanel = function(index) {
   //const origin = new THREE.Vector3(pO.X, pO.Y, pO.Z);
   //console.log( "origin", origin );
 
-  const mesh = THR.addMesh(0.3);
+  //var geometryCone = new THREE.ConeGeometry( 0.3, 0.5, 7 );
+  var geometrySphere = new THREE.SphereGeometry( 0.2, 6,10);
+  var mesh = new THREE.Mesh( geometrySphere );
+  
+  //const mesh = THR.addMesh(0.3);
   items.push(mesh);
-  mesh.position.copy(origin);
+  mesh.position.copy(centroid);
   //console.log( "mesh", mesh );
 
   //const pN = b3d.Plane.Normal;
@@ -202,11 +208,11 @@ SAM.getPanel = function(index) {
   //---------------------------------------------------
   //Paenl create blue arrow for normal MD 2020-06-01
   //var arrowHelper = new THREE.ArrowHelper( dir, origin, length, hex );
-  let arrowHelper = new THREE.ArrowHelper(normal, origin, 1, 0x0000ff);
+  let arrowHelper = new THREE.ArrowHelper(normal, centroid, 1, 0x0000ff);
   items.push(arrowHelper);
 
   //Panel create green arrow for axisX MD 2020-06-01
-  arrowHelper = new THREE.ArrowHelper(axisY, origin, 1, 0x00ff00);
+  arrowHelper = new THREE.ArrowHelper(axisY, centroid, 1, 0x00ff00);
   items.push(arrowHelper);
   //--------------------------------------------------
 
@@ -387,7 +393,7 @@ SAM.GetMeshFromPlanarBoundary3D = function(planarBoundary3D, holes, color) {
   const origin = SAM.GetOrigin(planarBoundary3D);
   const axisY = SAM.GetAxisY(planarBoundary3D);
   const normal = SAM.GetNormal(planarBoundary3D);
-  const axisX = SAM.GetAxisX(planarBoundary3D);
+  //const axisX = SAM.GetAxisX(planarBoundary3D);
   //console.log( "origin", origin );
   //console.log( "axisY", axisY );
   //console.log( "axisX", axisX );
@@ -487,11 +493,11 @@ SAM.ConvertTo3D = function(point2D, normal, origin, axisY) {
 
   let axisX = normal_Temp.cross(axisY_Temp);
   
-  console.log("point2D", point2D);
-  console.log("normal", normal_Temp);
-  console.log("axisY", axisY_Temp);
-  console.log("axisX", axisX);
-  console.log("axisY_Temp.X * point2D.Y", axisY_Temp.y * point2D.y);
+  //console.log("point2D", point2D);
+  //console.log("normal", normal_Temp);
+  //console.log("axisY", axisY_Temp);
+  //console.log("axisX", axisX);
+  //console.log("axisY_Temp.X * point2D.Y", axisY_Temp.y * point2D.y);
 
   let u = new THREE.Vector3(
     axisY_Temp.x * point2D.y,
@@ -499,7 +505,7 @@ SAM.ConvertTo3D = function(point2D, normal, origin, axisY) {
     axisY_Temp.z * point2D.y
   );
   
-    console.log("u", u);
+    //console.log("u", u);
   
   let v = new THREE.Vector3(
     axisX.x * point2D.x,
@@ -507,7 +513,7 @@ SAM.ConvertTo3D = function(point2D, normal, origin, axisY) {
     axisX.z * point2D.x
   );
   
-  console.log("v", v);
+  //console.log("v", v);
 
   return new THREE.Vector3(
     origin.x + u.x + v.x,
@@ -557,6 +563,51 @@ SAM.Vector3DToVector3 = function(vector3D) {
   if (vector3D == null) return null;
 
   return new THREE.Vector3(vector3D.X, vector3D.Y, vector3D.Z);
+};
+
+//Gets centroid of SAM PlanarBoundary3D
+SAM.GetCentroid = function(planarBoundary3D){
+  
+  if(planarBoundary3D == null)
+    return null;
+  
+  const origin = SAM.GetOrigin(planarBoundary3D);
+  const axisY = SAM.GetAxisY(planarBoundary3D);
+  const normal = SAM.GetNormal(planarBoundary3D);   
+  
+  let point2Ds = SAM.GetPoint2Ds(planarBoundary3D);
+  if(point2Ds == null || point2Ds.length < 3)
+    return null;
+  
+  let area = 0.0;
+  let vector3D = new THREE.Vector3(0,0,0);
+  
+  let point3D_1 = SAM.ConvertTo3D(point2Ds[0], normal, origin, axisY);
+  let point3D_2 = SAM.ConvertTo3D(point2Ds[1], normal, origin, axisY);
+  
+  for (let i = 2; i < point2Ds.length ; i++) {
+    
+    let point3D_3 = SAM.ConvertTo3D(point2Ds[i], normal, origin, axisY);
+    
+    let vector3D_1 = new THREE.Vector3(point3D_3.x - point3D_1.x, point3D_3.y - point3D_1.y, point3D_3.z - point3D_1.z);
+    let vector3D_2 = new THREE.Vector3(point3D_3.x - point3D_2.x, point3D_3.y - point3D_2.y, point3D_3.z - point3D_2.z);
+    
+    let vector3D_3 = vector3D_1.cross(vector3D_2);
+    let area_Temp = vector3D_3.length() / 2;
+    
+    vector3D.x += area_Temp * (point3D_1.x + point3D_2.x + point3D_3.x) / 3;
+    vector3D.y += area_Temp * (point3D_1.y + point3D_2.y + point3D_3.y) / 3;
+    vector3D.z += area_Temp * (point3D_1.z + point3D_2.z + point3D_3.z) / 3;
+    
+    area += area_Temp;
+    point3D_2 = point3D_3;
+  }
+  
+  if(area == 0)
+    return null;
+  
+  return new THREE.Vector3(vector3D.x / area, vector3D.y / area, vector3D.z / area);
+  
 };
 
 ///--------------------------------------------------------------///
