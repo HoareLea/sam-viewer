@@ -1,7 +1,7 @@
 const version = "2020-05-29";
 
 const urlJsonDefault =
-  "https://cdn.jsdelivr.net/gh/hoarelea/sam-viewer@master/sam-sample-files/RoofFloorWall.JSON";
+  "https://cdn.jsdelivr.net/gh/hoarelea/sam-viewer@master/sam-sample-files/ThreeLevelsRotatedBoxes.JSON";
 
 aGlitchHref = "https://glitch.com/~hoarelea-sam-viewer";
 
@@ -172,14 +172,15 @@ SAM.getPanel = function(index) {
   //const origin = new THREE.Vector3(pO.X, pO.Y, pO.Z);
   //console.log( "origin", origin );
 
+   //Create Spehere for Normal origin----------------------
   //var geometryCone = new THREE.ConeGeometry( 0.3, 0.5, 7 );
-  var geometrySphere = new THREE.SphereGeometry( 0.2, 6,10);
-  var mesh = new THREE.Mesh( geometrySphere );
+  //var geometrySphere = new THREE.SphereGeometry( 0.2, 6,10);
+  //var mesh = new THREE.Mesh( geometrySphere );
   
   //const mesh = THR.addMesh(0.3);
-  items.push(mesh);
-  mesh.position.copy(centroid);
-  //console.log( "mesh", mesh );
+  //items.push(mesh);
+  //mesh.position.copy(centroid);
+  //End------------------------------------------------------
 
   //const pN = b3d.Plane.Normal;
   //const normal = new THREE.Vector3(pN.X, pN.Y, pN.Z);
