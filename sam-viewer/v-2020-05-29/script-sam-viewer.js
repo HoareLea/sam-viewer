@@ -703,8 +703,8 @@ RAY.getHtm = function(intersected) {
         : 0;
     const htm = `Name: ${panelJson.Name}<br>
 	Type: ${panelJson.PanelType}<br>
-	//Apertures: ${apps}<br>
-	//<button onclick=RAY.showFind(${intersected.object.userData.index}); >panel parameters</button>`;
+	Apertures: ${apps}<br>
+	<button onclick=RAY.showFind(${intersected.object.userData.index}); >panel parameters</button>`;
 
     //SAM.setData(intersected.object.userData.index);
 
