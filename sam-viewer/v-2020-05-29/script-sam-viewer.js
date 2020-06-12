@@ -216,6 +216,8 @@ SAM.getPanel = function (index) {
 //Method 2 to save display traingles and show lines only
 //this method add one extra call but now triangles
 
+//add normals and exclude shade
+if (panel.PanelType != "Shade"){
   let line = SAM.getLine(
     [centroid, centroid.clone().add(normal)],
     "blue",
@@ -223,6 +225,7 @@ SAM.getPanel = function (index) {
     normal
   );
   items.push(line);
+  }
   
   
 
@@ -269,6 +272,8 @@ SAM.getPanel = function (index) {
 };
 
 // Old method to show scene global axis 
+
+
 
 SAM.getLine = function(vertices, color = 0x000000) {
   const geometry = new THREE.Geometry();
