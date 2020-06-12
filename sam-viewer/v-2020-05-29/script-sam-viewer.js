@@ -1,7 +1,7 @@
 const version = "2020-05-29";
 
 const urlJsonDefault =
-  "https://cdn.jsdelivr.net/gh/hoarelea/sam-viewer@master/sam-sample-files/RoofFloorWall1.JSON";
+  "https://cdn.jsdelivr.net/gh/hoarelea/sam-viewer@master/sam-sample-files/ThreeLevelsRotatedBoxesShade.JSON";
 
 aGlitchHref = "https://glitch.com/~hoarelea-sam-viewer";
 
