@@ -22,7 +22,7 @@ const SAM = {
 SAM.colors = {
   Undefined: 0x808080,
   Ceiling: 0xff8080,
-  CurtainWall: 0xffddad,
+  CurtainWall: 0x981CEB,
   Floor: 0xffff14,
   FloorExposed: 0x40b4ff,
   FloorInternal: 0x80ffff,
